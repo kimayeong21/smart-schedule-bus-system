@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>청주시 버스 + 일정 관리</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background: #f9fafb; padding: 2rem; }
+    .container { max-width: 1000px; }
+    .card { box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="mb-4">🚌 청주시 버스 + 일정 관리 시스템</h2>
+
+    <!-- 로그인/회원가입 화면 -->
+    {% if page == "login" %}
+      <div class="card p-4">
+        <h4>🔑 로그인</h4>
+        <form method="post" action="/login">
+          <input class="form-control my-2" name="username" placeholder="아이디" required>
+          <input class="form-control my-2" type="password" name="password" placeholder="비밀번호" required>
+          <button class="btn btn-primary w-100">로그인</button>
+        </form>
+        <p class="text-center mt-3"><a href="?page=signup">회원가입 하기</a></p>
+        {% if error %}<div class="alert alert-danger mt-2">{{ error }}</div>{% endif %}
+      </div>
+
+    {% elif page == "signup" %}
+      <div class="card p-4">
+        <h4>📝 회원가입</h4>
+        <form method="post" action="/signup">
+          <input class="form-control my-2" name="username" placeholder="아이디" required>
+          <input class="form-control my-2" type="password" name="password" placeholder="비밀번호" required>
+          <input class="form-control my-2" name="name" placeholder="이름" required>
+          <button class="btn btn-success w-100">회원가입</button>
+        </form>
+        <p class="text-center mt-3"><a href="/">로그인으로 돌아가기</a></p>
+        {% if error %}<div class="alert alert-danger mt-2">{{ error }}</div>{% endif %}
+      </div>
+
+    <!-- 로그인 성공 후 홈 화면 -->
+    {% elif page == "home" %}
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4>👋 {{ username }}님 환영합니다!</h4>
+        <a href="/logout" class="btn btn-outline-danger">로그아웃</a>
+      </div>
+
+      <!-- 일정 관리 -->
+      <div class="card p-3 mb-4">
+        <h5>📅 일정 추가</h5>
+        <form method="post" action="/add_schedule" class="row g-2">
+          <div class="col-md-3"><input class="form-control" name="title" placeholder="제목" required></div>
+          <div class="col-md-3"><input class="form-control" name="description" placeholder="내용"></div>
+          <div class="col-md-3"><input type="date" class="form-control" name="date" required></div>
+          <div class="col-md-2"><input type="time" class="form-control" name="time" required></div>
+          <div class="col-md-1"><button class="btn btn-primary w-100">등록</button></div>
+        </form>
+        <a href="/schedules" class="btn btn-outline-secondary mt-2">📖 내 일정 보기</a>
+      </div>
+
+      <!-- 버스 조회 -->
+      <div class="card p-3">
+        <h5>🚌 버스번호 조회</h5>
+        <form method="get" action="/search" class="my-2">
+          <input name="bus_no" value="{{ q or '' }}" class="form-control w-50 d-inline-block" placeholder="버스번호 (예: 105)">
+          <button class="btn btn-primary">검색</button>
+        </form>
+        {% if error %}
+          <div class="alert alert-danger">{{ error }}</div>
+        {% endif %}
+      </div>
+
+    <!-- 일정 목록 -->
+    {% elif page == "schedules" %}
+      <div class="d-flex justify-content-between mb-3">
+        <h4>📅 {{ username }}님의 일정</h4>
+        <a href="/home" class="btn btn-outline-secondary">뒤로가기</a>
+      </div>
+      <table class="table table-hover">
+        <thead class="table-light"><tr><th>제목</th><th>내용</th><th>날짜</th><th>시간</th></tr></thead>
+        <tbody>
+        {% for s in schedules %}
+          <tr><td>{{ s[0] }}</td><td>{{ s[1] }}</td><td>{{ s[2] }}</td><td>{{ s[3] }}</td></tr>
+        {% endfor %}
+        </tbody>
+      </table>
+
+    <!-- 버스 정보 -->
+    {% elif page == "bus" %}
+      <div class="d-flex justify-content-between mb-3">
+        <h4>🚌 {{ q }}번 버스 정보</h4>
+        <a href="/home" class="btn btn-outline-secondary">뒤로가기</a>
+      </div>
+      <table class="table table-striped">
+        <thead><tr><th>#</th><th>정류장명</th><th>X</th><th>Y</th></tr></thead>
+        <tbody>
+        {% for st in stops %}
+          <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ st.stop_name }}</td>
+            <td>{{ st.x }}</td>
+            <td>{{ st.y }}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
+  </div>
+
+  <script>
+  // 도착정보 조회 (버튼으로 조회 가능하게 확장할 경우)
+  document.addEventListener('click', async e => {
+    if (e.target.classList.contains('refresh')) {
+      const tr = e.target.closest('tr');
+      const nodeId = tr.dataset.node;
+      const cell = tr.querySelector('.arr');
+      cell.textContent = '조회 중...';
+      const res = await fetch(`/arrival?node_id=${encodeURIComponent(nodeId)}`);
+      const data = await res.json();
+      if (data.ok && data.arrivals.length) {
+        cell.textContent = data.arrivals.join(' / ');
+      } else {
+        cell.textContent = '정보 없음';
+      }
+    }
+  });
+  </script>
+</body>
+</html>

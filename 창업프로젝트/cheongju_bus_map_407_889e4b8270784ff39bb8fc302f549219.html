@@ -1,0 +1,3107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e8bcfde6db014c5ce476cdb79e23081b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e8bcfde6db014c5ce476cdb79e23081b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e8bcfde6db014c5ce476cdb79e23081b = L.map(
+                "map_e8bcfde6db014c5ce476cdb79e23081b",
+                {
+                    center: [36.72306035, 127.49654795],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e1faa8889e844c218cc39bf74ead2c25 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e1faa8889e844c218cc39bf74ead2c25.addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+            var marker_060a30a48b078b43433269492c3e1373 = L.marker(
+                [36.72306035, 127.49654795],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_819a7837bdcc85353c7d295a0443d4c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5756f699e4b1986b55d10ef47b936cc1 = $(`<div id="html_5756f699e4b1986b55d10ef47b936cc1" style="width: 100.0%; height: 100.0%;">청주국제공항</div>`)[0];
+                popup_819a7837bdcc85353c7d295a0443d4c5.setContent(html_5756f699e4b1986b55d10ef47b936cc1);
+            
+        
+
+        marker_060a30a48b078b43433269492c3e1373.bindPopup(popup_819a7837bdcc85353c7d295a0443d4c5)
+        ;
+
+        
+    
+    
+            var marker_ac9d4c5af59ca9149ad10ef5d838f903 = L.marker(
+                [36.72119948, 127.49130629],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_c024536a608ba3651ad248c4751f6427 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_76dde9bad80e97483c3344d45ee2fe94 = $(`<div id="html_76dde9bad80e97483c3344d45ee2fe94" style="width: 100.0%; height: 100.0%;">청주공항역</div>`)[0];
+                popup_c024536a608ba3651ad248c4751f6427.setContent(html_76dde9bad80e97483c3344d45ee2fe94);
+            
+        
+
+        marker_ac9d4c5af59ca9149ad10ef5d838f903.bindPopup(popup_c024536a608ba3651ad248c4751f6427)
+        ;
+
+        
+    
+    
+            var marker_3dc4f57d5dc59fc6ec00119af865b9fb = L.marker(
+                [36.70723964, 127.47915523],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_4ceabdfe000d26fc376adf16a412e8ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bed16021b3b953a67f7dd757b8db2e46 = $(`<div id="html_bed16021b3b953a67f7dd757b8db2e46" style="width: 100.0%; height: 100.0%;">국제공항입구</div>`)[0];
+                popup_4ceabdfe000d26fc376adf16a412e8ea.setContent(html_bed16021b3b953a67f7dd757b8db2e46);
+            
+        
+
+        marker_3dc4f57d5dc59fc6ec00119af865b9fb.bindPopup(popup_4ceabdfe000d26fc376adf16a412e8ea)
+        ;
+
+        
+    
+    
+            var marker_6e8deff426bf2e5e43cac40ab2eb0934 = L.marker(
+                [36.69911583, 127.48032911],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_875352f390c778ecbb36faec27546d0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbd2b745780117c231fe078b2c6f18cc = $(`<div id="html_cbd2b745780117c231fe078b2c6f18cc" style="width: 100.0%; height: 100.0%;">오근장역</div>`)[0];
+                popup_875352f390c778ecbb36faec27546d0a.setContent(html_cbd2b745780117c231fe078b2c6f18cc);
+            
+        
+
+        marker_6e8deff426bf2e5e43cac40ab2eb0934.bindPopup(popup_875352f390c778ecbb36faec27546d0a)
+        ;
+
+        
+    
+    
+            var marker_6d2d6aa88e16a3fb925128896f456693 = L.marker(
+                [36.69653865, 127.48069834],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_c8b8e10c117e4d8d52a8d91c1b0cb432 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aff7fdce81614560005cea7731c66f32 = $(`<div id="html_aff7fdce81614560005cea7731c66f32" style="width: 100.0%; height: 100.0%;">외평동</div>`)[0];
+                popup_c8b8e10c117e4d8d52a8d91c1b0cb432.setContent(html_aff7fdce81614560005cea7731c66f32);
+            
+        
+
+        marker_6d2d6aa88e16a3fb925128896f456693.bindPopup(popup_c8b8e10c117e4d8d52a8d91c1b0cb432)
+        ;
+
+        
+    
+    
+            var marker_ab0c477a10d7aef97e7510f34db8d38b = L.marker(
+                [36.69375284, 127.48178079],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_28ece651a3c3b3b5a814b6653fea73ed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_17ec909ec4f590059cead32b63b24f9f = $(`<div id="html_17ec909ec4f590059cead32b63b24f9f" style="width: 100.0%; height: 100.0%;">오근장동행정복지센터</div>`)[0];
+                popup_28ece651a3c3b3b5a814b6653fea73ed.setContent(html_17ec909ec4f590059cead32b63b24f9f);
+            
+        
+
+        marker_ab0c477a10d7aef97e7510f34db8d38b.bindPopup(popup_28ece651a3c3b3b5a814b6653fea73ed)
+        ;
+
+        
+    
+    
+            var marker_e709567b01763c082f5ecc5c2dfe9be9 = L.marker(
+                [36.6876174, 127.48311801],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_c80e1a5d0e827e35dbe5cfa046c7280f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fbc3b8a40d47e63748dc587ca1a8ea7e = $(`<div id="html_fbc3b8a40d47e63748dc587ca1a8ea7e" style="width: 100.0%; height: 100.0%;">북일초등학교</div>`)[0];
+                popup_c80e1a5d0e827e35dbe5cfa046c7280f.setContent(html_fbc3b8a40d47e63748dc587ca1a8ea7e);
+            
+        
+
+        marker_e709567b01763c082f5ecc5c2dfe9be9.bindPopup(popup_c80e1a5d0e827e35dbe5cfa046c7280f)
+        ;
+
+        
+    
+    
+            var marker_efff0785295bc0a51134da600414f2c5 = L.marker(
+                [36.68296323, 127.48220708],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_d8a44e639e4a25bd8528f1ee713cfefd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06416c6cc9cceda192c5a8228c116778 = $(`<div id="html_06416c6cc9cceda192c5a8228c116778" style="width: 100.0%; height: 100.0%;">충청북도교육문화원</div>`)[0];
+                popup_d8a44e639e4a25bd8528f1ee713cfefd.setContent(html_06416c6cc9cceda192c5a8228c116778);
+            
+        
+
+        marker_efff0785295bc0a51134da600414f2c5.bindPopup(popup_d8a44e639e4a25bd8528f1ee713cfefd)
+        ;
+
+        
+    
+    
+            var marker_c8dc5b8ac0a9f539244889c907ca2cae = L.marker(
+                [36.68012349, 127.48285739],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_751307030c1ec1bd989ef77160fe1151 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c493333da9c62d210d24fda0c402fa87 = $(`<div id="html_c493333da9c62d210d24fda0c402fa87" style="width: 100.0%; height: 100.0%;">발산교.장애인스포츠센터.청주빙상장</div>`)[0];
+                popup_751307030c1ec1bd989ef77160fe1151.setContent(html_c493333da9c62d210d24fda0c402fa87);
+            
+        
+
+        marker_c8dc5b8ac0a9f539244889c907ca2cae.bindPopup(popup_751307030c1ec1bd989ef77160fe1151)
+        ;
+
+        
+    
+    
+            var marker_bb5d419f5dbdd4506a2879e421bc8162 = L.marker(
+                [36.67595438, 127.48324188],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_e684b5d52d2c64da1c557a57f5f3179c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f728363a7520b13874fa14625e904959 = $(`<div id="html_f728363a7520b13874fa14625e904959" style="width: 100.0%; height: 100.0%;">율량중학교입구</div>`)[0];
+                popup_e684b5d52d2c64da1c557a57f5f3179c.setContent(html_f728363a7520b13874fa14625e904959);
+            
+        
+
+        marker_bb5d419f5dbdd4506a2879e421bc8162.bindPopup(popup_e684b5d52d2c64da1c557a57f5f3179c)
+        ;
+
+        
+    
+    
+            var marker_73008d0c520a8d81616f36b14da3b5f5 = L.marker(
+                [36.67047046, 127.48366359],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_27995ec8f1821c489447906ffb26c767 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_397467feae78e1dc6086f3634ccc3f73 = $(`<div id="html_397467feae78e1dc6086f3634ccc3f73" style="width: 100.0%; height: 100.0%;">청주성모병원</div>`)[0];
+                popup_27995ec8f1821c489447906ffb26c767.setContent(html_397467feae78e1dc6086f3634ccc3f73);
+            
+        
+
+        marker_73008d0c520a8d81616f36b14da3b5f5.bindPopup(popup_27995ec8f1821c489447906ffb26c767)
+        ;
+
+        
+    
+    
+            var marker_fadf25f9595bfe29cecf7f333e54d900 = L.marker(
+                [36.66666991, 127.48595743],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_d9c0380ccaccd2e23e88304f034f3b77 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b088aab9abf3e0a0688574341d3e8db0 = $(`<div id="html_b088aab9abf3e0a0688574341d3e8db0" style="width: 100.0%; height: 100.0%;">덕성초등학교</div>`)[0];
+                popup_d9c0380ccaccd2e23e88304f034f3b77.setContent(html_b088aab9abf3e0a0688574341d3e8db0);
+            
+        
+
+        marker_fadf25f9595bfe29cecf7f333e54d900.bindPopup(popup_d9c0380ccaccd2e23e88304f034f3b77)
+        ;
+
+        
+    
+    
+            var marker_0ef7425bc0e4a45b573a442857a78759 = L.marker(
+                [36.66308273, 127.48684897],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_9f72739b40c0e181caa05d43324debf2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e0959b8d105dd3c32aa5062908dfb588 = $(`<div id="html_e0959b8d105dd3c32aa5062908dfb588" style="width: 100.0%; height: 100.0%;">신화아파트.밤고개자연시장</div>`)[0];
+                popup_9f72739b40c0e181caa05d43324debf2.setContent(html_e0959b8d105dd3c32aa5062908dfb588);
+            
+        
+
+        marker_0ef7425bc0e4a45b573a442857a78759.bindPopup(popup_9f72739b40c0e181caa05d43324debf2)
+        ;
+
+        
+    
+    
+            var marker_b242c991f2f81c80bd37a4440b3e875c = L.marker(
+                [36.65950982, 127.48753988],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_052f6a680595358c79129bfef64050ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c747bb040a453bd337a9e5f30af0f141 = $(`<div id="html_c747bb040a453bd337a9e5f30af0f141" style="width: 100.0%; height: 100.0%;">밤고개</div>`)[0];
+                popup_052f6a680595358c79129bfef64050ab.setContent(html_c747bb040a453bd337a9e5f30af0f141);
+            
+        
+
+        marker_b242c991f2f81c80bd37a4440b3e875c.bindPopup(popup_052f6a680595358c79129bfef64050ab)
+        ;
+
+        
+    
+    
+            var marker_c966b763ab576748fa18975bca438c1d = L.marker(
+                [36.6551558, 127.48844776],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_231e6974065a2f5025e41525935a96cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f173b4ed23002b018d473d7b9d8fece9 = $(`<div id="html_f173b4ed23002b018d473d7b9d8fece9" style="width: 100.0%; height: 100.0%;">문화제조창.시청제2임시청사</div>`)[0];
+                popup_231e6974065a2f5025e41525935a96cd.setContent(html_f173b4ed23002b018d473d7b9d8fece9);
+            
+        
+
+        marker_c966b763ab576748fa18975bca438c1d.bindPopup(popup_231e6974065a2f5025e41525935a96cd)
+        ;
+
+        
+    
+    
+            var marker_dc0af75fe60081b25bd986c52ad0a39a = L.marker(
+                [36.65085033, 127.48885739],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_ff001bc827d20fbbd6ca1cc1f5c7f18e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e377c9ad30f8a1bf04d39adf979eeceb = $(`<div id="html_e377c9ad30f8a1bf04d39adf979eeceb" style="width: 100.0%; height: 100.0%;">청주대학교.뉴시스</div>`)[0];
+                popup_ff001bc827d20fbbd6ca1cc1f5c7f18e.setContent(html_e377c9ad30f8a1bf04d39adf979eeceb);
+            
+        
+
+        marker_dc0af75fe60081b25bd986c52ad0a39a.bindPopup(popup_ff001bc827d20fbbd6ca1cc1f5c7f18e)
+        ;
+
+        
+    
+    
+            var marker_558e4b93a68ffa3564c3649d1af41542 = L.marker(
+                [36.64809781, 127.48913878],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_10bbb0fbebac3e624ad66092a3921c11 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b30e9ec19dcbc5b257984b5049f2be1 = $(`<div id="html_6b30e9ec19dcbc5b257984b5049f2be1" style="width: 100.0%; height: 100.0%;">우암초등학교</div>`)[0];
+                popup_10bbb0fbebac3e624ad66092a3921c11.setContent(html_6b30e9ec19dcbc5b257984b5049f2be1);
+            
+        
+
+        marker_558e4b93a68ffa3564c3649d1af41542.bindPopup(popup_10bbb0fbebac3e624ad66092a3921c11)
+        ;
+
+        
+    
+    
+            var marker_927a84e9fe40391934ffb846f3f9d1fa = L.marker(
+                [36.64174424, 127.48972584],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_aaecb47075973ab8230af62b685c92dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87e2b9193758aa3f3a732d10939fbc3a = $(`<div id="html_87e2b9193758aa3f3a732d10939fbc3a" style="width: 100.0%; height: 100.0%;">시청 신청사예정지</div>`)[0];
+                popup_aaecb47075973ab8230af62b685c92dc.setContent(html_87e2b9193758aa3f3a732d10939fbc3a);
+            
+        
+
+        marker_927a84e9fe40391934ffb846f3f9d1fa.bindPopup(popup_aaecb47075973ab8230af62b685c92dc)
+        ;
+
+        
+    
+    
+            var marker_db3fca19edc09dc27c14ec25f2b926b5 = L.marker(
+                [36.63827951, 127.49007548],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_725ca59a74ec6ca89e7188574d8963ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7083f2b74440457932913ace7e838e66 = $(`<div id="html_7083f2b74440457932913ace7e838e66" style="width: 100.0%; height: 100.0%;">상당공원</div>`)[0];
+                popup_725ca59a74ec6ca89e7188574d8963ba.setContent(html_7083f2b74440457932913ace7e838e66);
+            
+        
+
+        marker_db3fca19edc09dc27c14ec25f2b926b5.bindPopup(popup_725ca59a74ec6ca89e7188574d8963ba)
+        ;
+
+        
+    
+    
+            var marker_8a72e51c67d93e2f232a5ba70839e84e = L.marker(
+                [36.63288973, 127.49071036],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_df78b9505fddf18247e406e6b9994cd3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c55725908b3638c618d0ccde4edc8f62 = $(`<div id="html_c55725908b3638c618d0ccde4edc8f62" style="width: 100.0%; height: 100.0%;">용두사지철당간</div>`)[0];
+                popup_df78b9505fddf18247e406e6b9994cd3.setContent(html_c55725908b3638c618d0ccde4edc8f62);
+            
+        
+
+        marker_8a72e51c67d93e2f232a5ba70839e84e.bindPopup(popup_df78b9505fddf18247e406e6b9994cd3)
+        ;
+
+        
+    
+    
+            var marker_a999b71160a9274d670c2f832c04bdd7 = L.marker(
+                [36.627554, 127.49067337],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_8d7f875d5774db042c4487ab940b56d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5fe8540eb96c1222f12fec11f7accb29 = $(`<div id="html_5fe8540eb96c1222f12fec11f7accb29" style="width: 100.0%; height: 100.0%;">육거리시장</div>`)[0];
+                popup_8d7f875d5774db042c4487ab940b56d5.setContent(html_5fe8540eb96c1222f12fec11f7accb29);
+            
+        
+
+        marker_a999b71160a9274d670c2f832c04bdd7.bindPopup(popup_8d7f875d5774db042c4487ab940b56d5)
+        ;
+
+        
+    
+    
+            var marker_ff5b2a1f9f08e999492dd39c68981d76 = L.marker(
+                [36.62406039, 127.48830626],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_90c1dccde2f50201e1be8c7b08a68642 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1dc8b3c11ef9179cd36da0a8c65389da = $(`<div id="html_1dc8b3c11ef9179cd36da0a8c65389da" style="width: 100.0%; height: 100.0%;">꽃다리.아동복지관</div>`)[0];
+                popup_90c1dccde2f50201e1be8c7b08a68642.setContent(html_1dc8b3c11ef9179cd36da0a8c65389da);
+            
+        
+
+        marker_ff5b2a1f9f08e999492dd39c68981d76.bindPopup(popup_90c1dccde2f50201e1be8c7b08a68642)
+        ;
+
+        
+    
+    
+            var marker_dbff3e5a0274e7a9be6b45202a142ee2 = L.marker(
+                [36.62100559, 127.4874442],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_0cf480a30e89683416eb7f99c1ca7ce7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c27dbfcbcde8287d4937706ade4966d7 = $(`<div id="html_c27dbfcbcde8287d4937706ade4966d7" style="width: 100.0%; height: 100.0%;">청주농협</div>`)[0];
+                popup_0cf480a30e89683416eb7f99c1ca7ce7.setContent(html_c27dbfcbcde8287d4937706ade4966d7);
+            
+        
+
+        marker_dbff3e5a0274e7a9be6b45202a142ee2.bindPopup(popup_0cf480a30e89683416eb7f99c1ca7ce7)
+        ;
+
+        
+    
+    
+            var marker_280025b8dc8296668c4f91649df95445 = L.marker(
+                [36.61711247, 127.48636102],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_d2a9956a1a6f8b81e9740cd4e9f1c344 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e87074f9836b1f0c99b6f8a5bc13d5d = $(`<div id="html_8e87074f9836b1f0c99b6f8a5bc13d5d" style="width: 100.0%; height: 100.0%;">청주교육대학교</div>`)[0];
+                popup_d2a9956a1a6f8b81e9740cd4e9f1c344.setContent(html_8e87074f9836b1f0c99b6f8a5bc13d5d);
+            
+        
+
+        marker_280025b8dc8296668c4f91649df95445.bindPopup(popup_d2a9956a1a6f8b81e9740cd4e9f1c344)
+        ;
+
+        
+    
+    
+            var marker_20848073e7c4f86a0785481ea6935d69 = L.marker(
+                [36.61387066, 127.48543924],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_331e24a3b8ac1eaba892de59980272d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb38ac63a63e95550482357a9d0244eb = $(`<div id="html_bb38ac63a63e95550482357a9d0244eb" style="width: 100.0%; height: 100.0%;">청주남중학교</div>`)[0];
+                popup_331e24a3b8ac1eaba892de59980272d4.setContent(html_bb38ac63a63e95550482357a9d0244eb);
+            
+        
+
+        marker_20848073e7c4f86a0785481ea6935d69.bindPopup(popup_331e24a3b8ac1eaba892de59980272d4)
+        ;
+
+        
+    
+    
+            var marker_53f675efc4f0e0096537843b99cf9472 = L.marker(
+                [36.61103228, 127.48449943],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_265859ea8a871057108e9d343528e4f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_573434afaf88341ecc393f468b3b76e5 = $(`<div id="html_573434afaf88341ecc393f468b3b76e5" style="width: 100.0%; height: 100.0%;">남성중학교</div>`)[0];
+                popup_265859ea8a871057108e9d343528e4f4.setContent(html_573434afaf88341ecc393f468b3b76e5);
+            
+        
+
+        marker_53f675efc4f0e0096537843b99cf9472.bindPopup(popup_265859ea8a871057108e9d343528e4f4)
+        ;
+
+        
+    
+    
+            var marker_31531b326ce38b0eb784d0c3dfebff7c = L.marker(
+                [36.60895978, 127.48292518],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_23142c01019cddba6da40d751c60a669 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_198c46f175f5c0d553bc3c10e94c1d59 = $(`<div id="html_198c46f175f5c0d553bc3c10e94c1d59" style="width: 100.0%; height: 100.0%;">충북고등학교</div>`)[0];
+                popup_23142c01019cddba6da40d751c60a669.setContent(html_198c46f175f5c0d553bc3c10e94c1d59);
+            
+        
+
+        marker_31531b326ce38b0eb784d0c3dfebff7c.bindPopup(popup_23142c01019cddba6da40d751c60a669)
+        ;
+
+        
+    
+    
+            var marker_367cd0336423b619fcb39a10c45f23fc = L.marker(
+                [36.60529464, 127.47992943],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_1b6b6a9e40b39d308eda5dd584b87b50 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82fab0633942e146fedeca1dfd8db63d = $(`<div id="html_82fab0633942e146fedeca1dfd8db63d" style="width: 100.0%; height: 100.0%;">충청북도교육청</div>`)[0];
+                popup_1b6b6a9e40b39d308eda5dd584b87b50.setContent(html_82fab0633942e146fedeca1dfd8db63d);
+            
+        
+
+        marker_367cd0336423b619fcb39a10c45f23fc.bindPopup(popup_1b6b6a9e40b39d308eda5dd584b87b50)
+        ;
+
+        
+    
+    
+            var marker_bc524f6ebf2b0b18b6e21b11297069f1 = L.marker(
+                [36.601988, 127.47742982],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_bcd07ceee04bfcb584cb0e50b30d6825 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aadf884265078c8075c7c2c45594cf9a = $(`<div id="html_aadf884265078c8075c7c2c45594cf9a" style="width: 100.0%; height: 100.0%;">청주교도소</div>`)[0];
+                popup_bcd07ceee04bfcb584cb0e50b30d6825.setContent(html_aadf884265078c8075c7c2c45594cf9a);
+            
+        
+
+        marker_bc524f6ebf2b0b18b6e21b11297069f1.bindPopup(popup_bcd07ceee04bfcb584cb0e50b30d6825)
+        ;
+
+        
+    
+    
+            var marker_45f81b10cbefd135bd2c6318fd8ddcbf = L.marker(
+                [36.59982762, 127.47424013],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_99a7462cd0cf559d7f2c164bfbbb9d8b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37216d180911ffbf6544b72a8b875f89 = $(`<div id="html_37216d180911ffbf6544b72a8b875f89" style="width: 100.0%; height: 100.0%;">이마트</div>`)[0];
+                popup_99a7462cd0cf559d7f2c164bfbbb9d8b.setContent(html_37216d180911ffbf6544b72a8b875f89);
+            
+        
+
+        marker_45f81b10cbefd135bd2c6318fd8ddcbf.bindPopup(popup_99a7462cd0cf559d7f2c164bfbbb9d8b)
+        ;
+
+        
+    
+    
+            var marker_8257680a37e557b3b28f098be50d3256 = L.marker(
+                [36.59816342, 127.47248651],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_589d74f1b06b1426b2792ac62ee95523 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c8effcf8c2738bcb00fdcf36fb769d5 = $(`<div id="html_1c8effcf8c2738bcb00fdcf36fb769d5" style="width: 100.0%; height: 100.0%;">농협가마지점</div>`)[0];
+                popup_589d74f1b06b1426b2792ac62ee95523.setContent(html_1c8effcf8c2738bcb00fdcf36fb769d5);
+            
+        
+
+        marker_8257680a37e557b3b28f098be50d3256.bindPopup(popup_589d74f1b06b1426b2792ac62ee95523)
+        ;
+
+        
+    
+    
+            var marker_f057c85cfe0a6779ced164157f1662fb = L.marker(
+                [36.59507621, 127.47119291],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_6330bb7114d66c6253c2748ef9e9aec4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df23a146c9a72ebdf6039337467c7483 = $(`<div id="html_df23a146c9a72ebdf6039337467c7483" style="width: 100.0%; height: 100.0%;">가마육교</div>`)[0];
+                popup_6330bb7114d66c6253c2748ef9e9aec4.setContent(html_df23a146c9a72ebdf6039337467c7483);
+            
+        
+
+        marker_f057c85cfe0a6779ced164157f1662fb.bindPopup(popup_6330bb7114d66c6253c2748ef9e9aec4)
+        ;
+
+        
+    
+    
+            var marker_6cc16aaf31f5a93cfafe60d4265191de = L.marker(
+                [36.59164496, 127.46963909],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_71e1fe797528c695e2dc099e2a9c518d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d021866ad7085209ce2f8c27e44fc0a = $(`<div id="html_0d021866ad7085209ce2f8c27e44fc0a" style="width: 100.0%; height: 100.0%;">양촌2리</div>`)[0];
+                popup_71e1fe797528c695e2dc099e2a9c518d.setContent(html_0d021866ad7085209ce2f8c27e44fc0a);
+            
+        
+
+        marker_6cc16aaf31f5a93cfafe60d4265191de.bindPopup(popup_71e1fe797528c695e2dc099e2a9c518d)
+        ;
+
+        
+    
+    
+            var marker_cdb9f0d120350e1b8473d9e07486d033 = L.marker(
+                [36.58601164, 127.46610429],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_b168ac1434e106501f196997e7e8250e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de3a54296e06bf9e9a08897d83b5e882 = $(`<div id="html_de3a54296e06bf9e9a08897d83b5e882" style="width: 100.0%; height: 100.0%;">양촌1리</div>`)[0];
+                popup_b168ac1434e106501f196997e7e8250e.setContent(html_de3a54296e06bf9e9a08897d83b5e882);
+            
+        
+
+        marker_cdb9f0d120350e1b8473d9e07486d033.bindPopup(popup_b168ac1434e106501f196997e7e8250e)
+        ;
+
+        
+    
+    
+            var marker_e9a3b581d9001767d91ffcfd4317e7da = L.marker(
+                [36.5833363, 127.46439241],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_fefdf05f3411e23ef570d2e71fb843f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4c73e58be02ccc8ae2324dbb8b52591 = $(`<div id="html_d4c73e58be02ccc8ae2324dbb8b52591" style="width: 100.0%; height: 100.0%;">양촌리</div>`)[0];
+                popup_fefdf05f3411e23ef570d2e71fb843f2.setContent(html_d4c73e58be02ccc8ae2324dbb8b52591);
+            
+        
+
+        marker_e9a3b581d9001767d91ffcfd4317e7da.bindPopup(popup_fefdf05f3411e23ef570d2e71fb843f2)
+        ;
+
+        
+    
+    
+            var marker_954ba3c174b5da7de552234c11bb0467 = L.marker(
+                [36.57912915, 127.46090206],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_a5de84feb573810d003726f9fb0fc70f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_47223e7dccee7e0c5afe1e0c0b868909 = $(`<div id="html_47223e7dccee7e0c5afe1e0c0b868909" style="width: 100.0%; height: 100.0%;">가좌리</div>`)[0];
+                popup_a5de84feb573810d003726f9fb0fc70f.setContent(html_47223e7dccee7e0c5afe1e0c0b868909);
+            
+        
+
+        marker_954ba3c174b5da7de552234c11bb0467.bindPopup(popup_a5de84feb573810d003726f9fb0fc70f)
+        ;
+
+        
+    
+    
+            var marker_627cbdf7963b820350080a5b28f924e9 = L.marker(
+                [36.57572852, 127.45446704],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_8e9d35f12e090472ad464b6471722dfa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf9e299bf76a4eb4906787a5c162f15b = $(`<div id="html_bf9e299bf76a4eb4906787a5c162f15b" style="width: 100.0%; height: 100.0%;">남이초등학교</div>`)[0];
+                popup_8e9d35f12e090472ad464b6471722dfa.setContent(html_bf9e299bf76a4eb4906787a5c162f15b);
+            
+        
+
+        marker_627cbdf7963b820350080a5b28f924e9.bindPopup(popup_8e9d35f12e090472ad464b6471722dfa)
+        ;
+
+        
+    
+    
+            var marker_bb7c61eabb4864c57a1cd7d14079f1f4 = L.marker(
+                [36.57039732, 127.45228088],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_f3bc2630992326399cb135c99b3495d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e647b6c26df8c80cd6c580a8164992f0 = $(`<div id="html_e647b6c26df8c80cd6c580a8164992f0" style="width: 100.0%; height: 100.0%;">수대리</div>`)[0];
+                popup_f3bc2630992326399cb135c99b3495d8.setContent(html_e647b6c26df8c80cd6c580a8164992f0);
+            
+        
+
+        marker_bb7c61eabb4864c57a1cd7d14079f1f4.bindPopup(popup_f3bc2630992326399cb135c99b3495d8)
+        ;
+
+        
+    
+    
+            var marker_c61e87774ce0edad05940ffb42032c94 = L.marker(
+                [36.56245818, 127.44523407],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_abb8f727a37716b2acba4a313404d9f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7f2180cce3c8c0fde3c0e49913c46e4 = $(`<div id="html_f7f2180cce3c8c0fde3c0e49913c46e4" style="width: 100.0%; height: 100.0%;">척산3리</div>`)[0];
+                popup_abb8f727a37716b2acba4a313404d9f0.setContent(html_f7f2180cce3c8c0fde3c0e49913c46e4);
+            
+        
+
+        marker_c61e87774ce0edad05940ffb42032c94.bindPopup(popup_abb8f727a37716b2acba4a313404d9f0)
+        ;
+
+        
+    
+    
+            var marker_6a33043e7eb973f02c652215a6095bdf = L.marker(
+                [36.56281528, 127.44010818],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_d4a602443c72aa000ba4c45d8b7bfdf8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f52cff97446f31062773a36498a79752 = $(`<div id="html_f52cff97446f31062773a36498a79752" style="width: 100.0%; height: 100.0%;">척산1리</div>`)[0];
+                popup_d4a602443c72aa000ba4c45d8b7bfdf8.setContent(html_f52cff97446f31062773a36498a79752);
+            
+        
+
+        marker_6a33043e7eb973f02c652215a6095bdf.bindPopup(popup_d4a602443c72aa000ba4c45d8b7bfdf8)
+        ;
+
+        
+    
+    
+            var marker_fe941783d84ec91bd615f39c3ad40afb = L.marker(
+                [36.55993863, 127.43445238],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_bf79dbe55cd137d757ce758eb13f0978 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ce6140b9ca63280bc8848e1a8c003f8 = $(`<div id="html_2ce6140b9ca63280bc8848e1a8c003f8" style="width: 100.0%; height: 100.0%;">남이면행정복지센터</div>`)[0];
+                popup_bf79dbe55cd137d757ce758eb13f0978.setContent(html_2ce6140b9ca63280bc8848e1a8c003f8);
+            
+        
+
+        marker_fe941783d84ec91bd615f39c3ad40afb.bindPopup(popup_bf79dbe55cd137d757ce758eb13f0978)
+        ;
+
+        
+    
+    
+            var marker_21656880ac8643c77737ccaa1c5adb2d = L.marker(
+                [36.5561969, 127.43111295],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_3a5fc26d04716929f97ecadc5041f2ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48ebe24e92f5beefe0d8c408fcba90b0 = $(`<div id="html_48ebe24e92f5beefe0d8c408fcba90b0" style="width: 100.0%; height: 100.0%;">남이외천삼거리(외천3리)</div>`)[0];
+                popup_3a5fc26d04716929f97ecadc5041f2ef.setContent(html_48ebe24e92f5beefe0d8c408fcba90b0);
+            
+        
+
+        marker_21656880ac8643c77737ccaa1c5adb2d.bindPopup(popup_3a5fc26d04716929f97ecadc5041f2ef)
+        ;
+
+        
+    
+    
+            var marker_be2926fc3921d63dcb8d10df47d03e43 = L.marker(
+                [36.54863803, 127.43052796],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_8b65c2e63d47592b650d2d4110d52b0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb6e80c4fde493983a77ee9472c5ad31 = $(`<div id="html_cb6e80c4fde493983a77ee9472c5ad31" style="width: 100.0%; height: 100.0%;">외천2리</div>`)[0];
+                popup_8b65c2e63d47592b650d2d4110d52b0a.setContent(html_cb6e80c4fde493983a77ee9472c5ad31);
+            
+        
+
+        marker_be2926fc3921d63dcb8d10df47d03e43.bindPopup(popup_8b65c2e63d47592b650d2d4110d52b0a)
+        ;
+
+        
+    
+    
+            var marker_f2e6992d8eaffbb6486b0ef994099839 = L.marker(
+                [36.54190142, 127.42999571],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_948749beb3638cc622cc1b2ec3ba8fb6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_47939afb57769feb46b01fe8f4db5d80 = $(`<div id="html_47939afb57769feb46b01fe8f4db5d80" style="width: 100.0%; height: 100.0%;">부용외천3리.양지말</div>`)[0];
+                popup_948749beb3638cc622cc1b2ec3ba8fb6.setContent(html_47939afb57769feb46b01fe8f4db5d80);
+            
+        
+
+        marker_f2e6992d8eaffbb6486b0ef994099839.bindPopup(popup_948749beb3638cc622cc1b2ec3ba8fb6)
+        ;
+
+        
+    
+    
+            var marker_cc83df9a3e65938fad2d356db700250b = L.marker(
+                [36.5348604, 127.42671675],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_725eb71e1f49ef1f8526ef7d22e40f7a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b333014d2e624c43e09ea98aba52b3b1 = $(`<div id="html_b333014d2e624c43e09ea98aba52b3b1" style="width: 100.0%; height: 100.0%;">부용외천2리.황뜸</div>`)[0];
+                popup_725eb71e1f49ef1f8526ef7d22e40f7a.setContent(html_b333014d2e624c43e09ea98aba52b3b1);
+            
+        
+
+        marker_cc83df9a3e65938fad2d356db700250b.bindPopup(popup_725eb71e1f49ef1f8526ef7d22e40f7a)
+        ;
+
+        
+    
+    
+            var marker_2828cb11dc866e8d22d3d37b89680db8 = L.marker(
+                [36.53216942, 127.42652071],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_b089a1e2755e99b312117e0a19034218 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_790bce9ef242944b71aa53d9b9051e9c = $(`<div id="html_790bce9ef242944b71aa53d9b9051e9c" style="width: 100.0%; height: 100.0%;">부용외천2리.창말</div>`)[0];
+                popup_b089a1e2755e99b312117e0a19034218.setContent(html_790bce9ef242944b71aa53d9b9051e9c);
+            
+        
+
+        marker_2828cb11dc866e8d22d3d37b89680db8.bindPopup(popup_b089a1e2755e99b312117e0a19034218)
+        ;
+
+        
+    
+    
+            var marker_ae5b559df409edb4c86c858b0da9cd6f = L.marker(
+                [36.52241856, 127.43173038],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_cf7a89316bc9f3ee944e4a0a83aec86b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f11b8134eca81db1303bfd159bf30793 = $(`<div id="html_f11b8134eca81db1303bfd159bf30793" style="width: 100.0%; height: 100.0%;">죽암.청주IT과학고</div>`)[0];
+                popup_cf7a89316bc9f3ee944e4a0a83aec86b.setContent(html_f11b8134eca81db1303bfd159bf30793);
+            
+        
+
+        marker_ae5b559df409edb4c86c858b0da9cd6f.bindPopup(popup_cf7a89316bc9f3ee944e4a0a83aec86b)
+        ;
+
+        
+    
+    
+            var marker_8877dbf0e95765afdbd423f54be3bfe7 = L.marker(
+                [36.51763314, 127.42915607],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_79845e4418d7ef5ea18b3799bcc4dbf0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a722bcca963546dfc1070a4f5ede098e = $(`<div id="html_a722bcca963546dfc1070a4f5ede098e" style="width: 100.0%; height: 100.0%;">우록2리(청원가구마을)</div>`)[0];
+                popup_79845e4418d7ef5ea18b3799bcc4dbf0.setContent(html_a722bcca963546dfc1070a4f5ede098e);
+            
+        
+
+        marker_8877dbf0e95765afdbd423f54be3bfe7.bindPopup(popup_79845e4418d7ef5ea18b3799bcc4dbf0)
+        ;
+
+        
+    
+    
+            var marker_849fc76676861d073030b0c15463445d = L.marker(
+                [36.51509218, 127.4286665],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_917bde00a3d610d494ba8da717ce1c6e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50747dd667cd8b8799e4fa3c83f21a9c = $(`<div id="html_50747dd667cd8b8799e4fa3c83f21a9c" style="width: 100.0%; height: 100.0%;">우록2리</div>`)[0];
+                popup_917bde00a3d610d494ba8da717ce1c6e.setContent(html_50747dd667cd8b8799e4fa3c83f21a9c);
+            
+        
+
+        marker_849fc76676861d073030b0c15463445d.bindPopup(popup_917bde00a3d610d494ba8da717ce1c6e)
+        ;
+
+        
+    
+    
+            var marker_d31dce191aad97f163b9ccee3552d01f = L.marker(
+                [36.50789833, 127.42786121],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_d5f57a6040c2da4e891d43192f63d1d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf491459e46bf7722de20ce3bbeeb086 = $(`<div id="html_cf491459e46bf7722de20ce3bbeeb086" style="width: 100.0%; height: 100.0%;">죽전2리</div>`)[0];
+                popup_d5f57a6040c2da4e891d43192f63d1d7.setContent(html_cf491459e46bf7722de20ce3bbeeb086);
+            
+        
+
+        marker_d31dce191aad97f163b9ccee3552d01f.bindPopup(popup_d5f57a6040c2da4e891d43192f63d1d7)
+        ;
+
+        
+    
+    
+            var marker_e7531e790ce0ac75c18cae4af907e29e = L.marker(
+                [36.50143717, 127.42793693],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_a51b92aac9a741c4496d0825460de539 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70ee32ed2a2fadfeb5d3157110891b9d = $(`<div id="html_70ee32ed2a2fadfeb5d3157110891b9d" style="width: 100.0%; height: 100.0%;">우록1리</div>`)[0];
+                popup_a51b92aac9a741c4496d0825460de539.setContent(html_70ee32ed2a2fadfeb5d3157110891b9d);
+            
+        
+
+        marker_e7531e790ce0ac75c18cae4af907e29e.bindPopup(popup_a51b92aac9a741c4496d0825460de539)
+        ;
+
+        
+    
+    
+            var marker_9a723590d1a550bfbb83bc07ca638dd2 = L.marker(
+                [36.49915454, 127.42685511],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_f25759860a418c3c622ddf089f96eeb8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_271d53167b6d1cc72eddaef5579717f2 = $(`<div id="html_271d53167b6d1cc72eddaef5579717f2" style="width: 100.0%; height: 100.0%;">죽전3리</div>`)[0];
+                popup_f25759860a418c3c622ddf089f96eeb8.setContent(html_271d53167b6d1cc72eddaef5579717f2);
+            
+        
+
+        marker_9a723590d1a550bfbb83bc07ca638dd2.bindPopup(popup_f25759860a418c3c622ddf089f96eeb8)
+        ;
+
+        
+    
+    
+            var marker_a33a7691e940afc24bf5240fbff5e3f4 = L.marker(
+                [36.49465552, 127.42573186],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_bc9275de223a94aa0ea0c4bac5917bab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_821c45202ef1bcad257a5b6cf3e644a9 = $(`<div id="html_821c45202ef1bcad257a5b6cf3e644a9" style="width: 100.0%; height: 100.0%;">죽전1리</div>`)[0];
+                popup_bc9275de223a94aa0ea0c4bac5917bab.setContent(html_821c45202ef1bcad257a5b6cf3e644a9);
+            
+        
+
+        marker_a33a7691e940afc24bf5240fbff5e3f4.bindPopup(popup_bc9275de223a94aa0ea0c4bac5917bab)
+        ;
+
+        
+    
+    
+            var marker_a1f680e5652331ccb434c7d6cb13c9bd = L.marker(
+                [36.48679322, 127.42360552],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_d86f2f23d0930e19cc4b2b671d97565b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d78a6a9febc8673921cfeb34c97cbbd = $(`<div id="html_8d78a6a9febc8673921cfeb34c97cbbd" style="width: 100.0%; height: 100.0%;">현도면행정복지센터.선동리</div>`)[0];
+                popup_d86f2f23d0930e19cc4b2b671d97565b.setContent(html_8d78a6a9febc8673921cfeb34c97cbbd);
+            
+        
+
+        marker_a1f680e5652331ccb434c7d6cb13c9bd.bindPopup(popup_d86f2f23d0930e19cc4b2b671d97565b)
+        ;
+
+        
+    
+    
+            var marker_296dd7c8baed00c00b59d22b38312109 = L.marker(
+                [36.48391777, 127.42436809],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_742e1e798038e84ee003f205ca10cd37 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd4cfdde8ef352dc05ceae0f180e9bd0 = $(`<div id="html_bd4cfdde8ef352dc05ceae0f180e9bd0" style="width: 100.0%; height: 100.0%;">시목리</div>`)[0];
+                popup_742e1e798038e84ee003f205ca10cd37.setContent(html_bd4cfdde8ef352dc05ceae0f180e9bd0);
+            
+        
+
+        marker_296dd7c8baed00c00b59d22b38312109.bindPopup(popup_742e1e798038e84ee003f205ca10cd37)
+        ;
+
+        
+    
+    
+            var marker_c23a6f0a0b9ada930e8ab6dda389ebb7 = L.marker(
+                [36.4736746, 127.42595988],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_d3faedfec41e7762762e9a99ec5e14e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7edf0cad8d8ac96ddc3df52be5263a30 = $(`<div id="html_7edf0cad8d8ac96ddc3df52be5263a30" style="width: 100.0%; height: 100.0%;">매봉(매봉리방면)</div>`)[0];
+                popup_d3faedfec41e7762762e9a99ec5e14e5.setContent(html_7edf0cad8d8ac96ddc3df52be5263a30);
+            
+        
+
+        marker_c23a6f0a0b9ada930e8ab6dda389ebb7.bindPopup(popup_d3faedfec41e7762762e9a99ec5e14e5)
+        ;
+
+        
+    
+    
+            var marker_264deaeb692cd0e2f44b863ae780d8b9 = L.marker(
+                [36.47062165, 127.42425351],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_f93fb7c42cb255ee4d10aac04cf2f71b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b08481924e3ec6b26037c97b6d94ef9b = $(`<div id="html_b08481924e3ec6b26037c97b6d94ef9b" style="width: 100.0%; height: 100.0%;">매봉(양지리방면)</div>`)[0];
+                popup_f93fb7c42cb255ee4d10aac04cf2f71b.setContent(html_b08481924e3ec6b26037c97b6d94ef9b);
+            
+        
+
+        marker_264deaeb692cd0e2f44b863ae780d8b9.bindPopup(popup_f93fb7c42cb255ee4d10aac04cf2f71b)
+        ;
+
+        
+    
+    
+            var marker_95df0506da716822023405595925e9f9 = L.marker(
+                [36.45926059, 127.4266903],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_965b727c68f04783f748a54fa4b742b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d67a506e6846f66225402161fffa46d3 = $(`<div id="html_d67a506e6846f66225402161fffa46d3" style="width: 100.0%; height: 100.0%;">양지리</div>`)[0];
+                popup_965b727c68f04783f748a54fa4b742b1.setContent(html_d67a506e6846f66225402161fffa46d3);
+            
+        
+
+        marker_95df0506da716822023405595925e9f9.bindPopup(popup_965b727c68f04783f748a54fa4b742b1)
+        ;
+
+        
+    
+    
+            var marker_33cf740ff80c5a22b83810c5a6d8c2be = L.marker(
+                [36.45281106, 127.42854342],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_530e2812dc5d961c118d5a7e51020248 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7f828dffe0918d1efc10e5b988e1e16 = $(`<div id="html_a7f828dffe0918d1efc10e5b988e1e16" style="width: 100.0%; height: 100.0%;">신탄진동행정복지센터</div>`)[0];
+                popup_530e2812dc5d961c118d5a7e51020248.setContent(html_a7f828dffe0918d1efc10e5b988e1e16);
+            
+        
+
+        marker_33cf740ff80c5a22b83810c5a6d8c2be.bindPopup(popup_530e2812dc5d961c118d5a7e51020248)
+        ;
+
+        
+    
+    
+            var marker_506b27c4fb278fc286c2927955f28aae = L.marker(
+                [36.44966958, 127.42893063],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_f1503cc5ace1af6bf2c0fc82c1ddd9dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ff15dc8ed48e8148fec1212516a4b99 = $(`<div id="html_4ff15dc8ed48e8148fec1212516a4b99" style="width: 100.0%; height: 100.0%;">신탄진역</div>`)[0];
+                popup_f1503cc5ace1af6bf2c0fc82c1ddd9dd.setContent(html_4ff15dc8ed48e8148fec1212516a4b99);
+            
+        
+
+        marker_506b27c4fb278fc286c2927955f28aae.bindPopup(popup_f1503cc5ace1af6bf2c0fc82c1ddd9dd)
+        ;
+
+        
+    
+    
+            var marker_a6bf4ae5bdc5277ecf87aea06d879fd5 = L.marker(
+                [36.44449764, 127.42925787],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_050a018ec3219b3151750346ad89e99f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ed3159a7d6350c18fa0eff37ce466d3 = $(`<div id="html_7ed3159a7d6350c18fa0eff37ce466d3" style="width: 100.0%; height: 100.0%;">남경마을</div>`)[0];
+                popup_050a018ec3219b3151750346ad89e99f.setContent(html_7ed3159a7d6350c18fa0eff37ce466d3);
+            
+        
+
+        marker_a6bf4ae5bdc5277ecf87aea06d879fd5.bindPopup(popup_050a018ec3219b3151750346ad89e99f)
+        ;
+
+        
+    
+    
+            var marker_56db1875e4176a08d75f281e73d1ae19 = L.marker(
+                [36.44242017, 127.42961482],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_5fb32801284f911033fa64f08b178b9f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c6b579f9975a1f780bef8430b9614ac = $(`<div id="html_8c6b579f9975a1f780bef8430b9614ac" style="width: 100.0%; height: 100.0%;">신탄진과선교</div>`)[0];
+                popup_5fb32801284f911033fa64f08b178b9f.setContent(html_8c6b579f9975a1f780bef8430b9614ac);
+            
+        
+
+        marker_56db1875e4176a08d75f281e73d1ae19.bindPopup(popup_5fb32801284f911033fa64f08b178b9f)
+        ;
+
+        
+    
+    
+            var marker_9f2d8bdc45862cd15c17c5f6a41f96b8 = L.marker(
+                [36.44292991, 127.42945032],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_74e7556794c07355de5f012a1548578f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7bb00cf0312a25e9158d347d9421954c = $(`<div id="html_7bb00cf0312a25e9158d347d9421954c" style="width: 100.0%; height: 100.0%;">신탄진과선교</div>`)[0];
+                popup_74e7556794c07355de5f012a1548578f.setContent(html_7bb00cf0312a25e9158d347d9421954c);
+            
+        
+
+        marker_9f2d8bdc45862cd15c17c5f6a41f96b8.bindPopup(popup_74e7556794c07355de5f012a1548578f)
+        ;
+
+        
+    
+    
+            var marker_316b4589e5aabe72c641514066a56869 = L.marker(
+                [36.44504925, 127.42970342],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_68387f4d634a456c56b9659b252e0661 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4bc7be61c787906ca851286e47d33a5c = $(`<div id="html_4bc7be61c787906ca851286e47d33a5c" style="width: 100.0%; height: 100.0%;">남경마을</div>`)[0];
+                popup_68387f4d634a456c56b9659b252e0661.setContent(html_4bc7be61c787906ca851286e47d33a5c);
+            
+        
+
+        marker_316b4589e5aabe72c641514066a56869.bindPopup(popup_68387f4d634a456c56b9659b252e0661)
+        ;
+
+        
+    
+    
+            var marker_f0895cb84e095fb96563b501afaa2237 = L.marker(
+                [36.449377, 127.429334],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_7fd008f1cfd7c42ceecb651c0d61645f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78c900fa70ad02fb9bdaae7790da5e22 = $(`<div id="html_78c900fa70ad02fb9bdaae7790da5e22" style="width: 100.0%; height: 100.0%;">신탄진역</div>`)[0];
+                popup_7fd008f1cfd7c42ceecb651c0d61645f.setContent(html_78c900fa70ad02fb9bdaae7790da5e22);
+            
+        
+
+        marker_f0895cb84e095fb96563b501afaa2237.bindPopup(popup_7fd008f1cfd7c42ceecb651c0d61645f)
+        ;
+
+        
+    
+    
+            var marker_9df0e0ddad1fcc5cdaf245512586dec9 = L.marker(
+                [36.45212282, 127.42889344],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_57d46aba03e6e7b304d2af3e9899fb13 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a927f5c46d26de8d15b06dcc878f48a6 = $(`<div id="html_a927f5c46d26de8d15b06dcc878f48a6" style="width: 100.0%; height: 100.0%;">신탄진동행정복지센터</div>`)[0];
+                popup_57d46aba03e6e7b304d2af3e9899fb13.setContent(html_a927f5c46d26de8d15b06dcc878f48a6);
+            
+        
+
+        marker_9df0e0ddad1fcc5cdaf245512586dec9.bindPopup(popup_57d46aba03e6e7b304d2af3e9899fb13)
+        ;
+
+        
+    
+    
+            var marker_36be38e2e02090407e95d4a0a09e294d = L.marker(
+                [36.45933538, 127.42688373],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_3201a5c8ddac0f3835622685e186eb41 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a5bef46d7fdf36c61fe109b3dc726bed = $(`<div id="html_a5bef46d7fdf36c61fe109b3dc726bed" style="width: 100.0%; height: 100.0%;">양지2리</div>`)[0];
+                popup_3201a5c8ddac0f3835622685e186eb41.setContent(html_a5bef46d7fdf36c61fe109b3dc726bed);
+            
+        
+
+        marker_36be38e2e02090407e95d4a0a09e294d.bindPopup(popup_3201a5c8ddac0f3835622685e186eb41)
+        ;
+
+        
+    
+    
+            var marker_688910697ac64dd6b18fc2d9ac4e3184 = L.marker(
+                [36.47088331, 127.4246636],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_ba77d086ac4c5777f8ccdcafce5d62fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_672e16d0eac0f4e508a438b10f3d4a4e = $(`<div id="html_672e16d0eac0f4e508a438b10f3d4a4e" style="width: 100.0%; height: 100.0%;">매봉리</div>`)[0];
+                popup_ba77d086ac4c5777f8ccdcafce5d62fe.setContent(html_672e16d0eac0f4e508a438b10f3d4a4e);
+            
+        
+
+        marker_688910697ac64dd6b18fc2d9ac4e3184.bindPopup(popup_ba77d086ac4c5777f8ccdcafce5d62fe)
+        ;
+
+        
+    
+    
+            var marker_90c2e6b5b053a5d9219abf2c692bb0b8 = L.marker(
+                [36.47441086, 127.42629083],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_783d1152ec841515a751b519f09530df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72586310c4f48cffc4fba4dac4626d23 = $(`<div id="html_72586310c4f48cffc4fba4dac4626d23" style="width: 100.0%; height: 100.0%;">달계리</div>`)[0];
+                popup_783d1152ec841515a751b519f09530df.setContent(html_72586310c4f48cffc4fba4dac4626d23);
+            
+        
+
+        marker_90c2e6b5b053a5d9219abf2c692bb0b8.bindPopup(popup_783d1152ec841515a751b519f09530df)
+        ;
+
+        
+    
+    
+            var marker_9085b25f20afcc41085d87b5289286e2 = L.marker(
+                [36.48500561, 127.42416847],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_5d4d59158d9da5d5a9b93ae739bbdaca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_345a83d77fc3e0fe1df29b7fd274f4e9 = $(`<div id="html_345a83d77fc3e0fe1df29b7fd274f4e9" style="width: 100.0%; height: 100.0%;">현도면행정복지센터.선동리</div>`)[0];
+                popup_5d4d59158d9da5d5a9b93ae739bbdaca.setContent(html_345a83d77fc3e0fe1df29b7fd274f4e9);
+            
+        
+
+        marker_9085b25f20afcc41085d87b5289286e2.bindPopup(popup_5d4d59158d9da5d5a9b93ae739bbdaca)
+        ;
+
+        
+    
+    
+            var marker_ba18f32dbcf36b8fb058141fd09bbb67 = L.marker(
+                [36.49455133, 127.4259018],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_78251e464eb0e025d4c742634bf4c7ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8cdb541e5f44e073f28766a4319aa5c = $(`<div id="html_a8cdb541e5f44e073f28766a4319aa5c" style="width: 100.0%; height: 100.0%;">죽전1리</div>`)[0];
+                popup_78251e464eb0e025d4c742634bf4c7ee.setContent(html_a8cdb541e5f44e073f28766a4319aa5c);
+            
+        
+
+        marker_ba18f32dbcf36b8fb058141fd09bbb67.bindPopup(popup_78251e464eb0e025d4c742634bf4c7ee)
+        ;
+
+        
+    
+    
+            var marker_75f0d001ffe9b28f0884947f6a0f214c = L.marker(
+                [36.49899706, 127.42702113],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_c1b77c12bbf335ac98bf77beb00deb4e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9bd0c101294e1657484bd8076af75f81 = $(`<div id="html_9bd0c101294e1657484bd8076af75f81" style="width: 100.0%; height: 100.0%;">죽전3리</div>`)[0];
+                popup_c1b77c12bbf335ac98bf77beb00deb4e.setContent(html_9bd0c101294e1657484bd8076af75f81);
+            
+        
+
+        marker_75f0d001ffe9b28f0884947f6a0f214c.bindPopup(popup_c1b77c12bbf335ac98bf77beb00deb4e)
+        ;
+
+        
+    
+    
+            var marker_2ebe1df52c62295402d79bf4cf9105f9 = L.marker(
+                [36.5012569, 127.42806163],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_9f6d8d4fccf40290262f5c53e6d79beb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db2d62bd7c9260833b859dc52e5aec52 = $(`<div id="html_db2d62bd7c9260833b859dc52e5aec52" style="width: 100.0%; height: 100.0%;">우록1리</div>`)[0];
+                popup_9f6d8d4fccf40290262f5c53e6d79beb.setContent(html_db2d62bd7c9260833b859dc52e5aec52);
+            
+        
+
+        marker_2ebe1df52c62295402d79bf4cf9105f9.bindPopup(popup_9f6d8d4fccf40290262f5c53e6d79beb)
+        ;
+
+        
+    
+    
+            var marker_741726ac1c54b7f486e7452e5f8b703b = L.marker(
+                [36.50895837, 127.42814889],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_94784f220151416e700ef679f01d9f30 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d699877c4e1f4391a5c35e360175e730 = $(`<div id="html_d699877c4e1f4391a5c35e360175e730" style="width: 100.0%; height: 100.0%;">우록3리</div>`)[0];
+                popup_94784f220151416e700ef679f01d9f30.setContent(html_d699877c4e1f4391a5c35e360175e730);
+            
+        
+
+        marker_741726ac1c54b7f486e7452e5f8b703b.bindPopup(popup_94784f220151416e700ef679f01d9f30)
+        ;
+
+        
+    
+    
+            var marker_52ee9bfc0e46c9df31ad707b8619e8e5 = L.marker(
+                [36.51386816, 127.42872882],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_e989f070ba26922dab8f6b808307bcd7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_166fdd89d5740cafe8f0db0d7f7e6fed = $(`<div id="html_166fdd89d5740cafe8f0db0d7f7e6fed" style="width: 100.0%; height: 100.0%;">우록2리</div>`)[0];
+                popup_e989f070ba26922dab8f6b808307bcd7.setContent(html_166fdd89d5740cafe8f0db0d7f7e6fed);
+            
+        
+
+        marker_52ee9bfc0e46c9df31ad707b8619e8e5.bindPopup(popup_e989f070ba26922dab8f6b808307bcd7)
+        ;
+
+        
+    
+    
+            var marker_9b51fdb05b19ae90dfc3cbe285fa2c78 = L.marker(
+                [36.517307, 127.42926165],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_9afe4b319f9ec4d9bdd5c72cc694718a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7920656d4c0fd0bfd900985220fed6e = $(`<div id="html_a7920656d4c0fd0bfd900985220fed6e" style="width: 100.0%; height: 100.0%;">우록2리(청원가구마을)</div>`)[0];
+                popup_9afe4b319f9ec4d9bdd5c72cc694718a.setContent(html_a7920656d4c0fd0bfd900985220fed6e);
+            
+        
+
+        marker_9b51fdb05b19ae90dfc3cbe285fa2c78.bindPopup(popup_9afe4b319f9ec4d9bdd5c72cc694718a)
+        ;
+
+        
+    
+    
+            var marker_a68f5db2313ceb1ebfe592a16a5247db = L.marker(
+                [36.52355061, 127.43217491],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_feee06235064f97e9ffef1eaae8f6036 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_658b5a0b60212d487d160f0c676015d5 = $(`<div id="html_658b5a0b60212d487d160f0c676015d5" style="width: 100.0%; height: 100.0%;">죽암.청주IT과학고</div>`)[0];
+                popup_feee06235064f97e9ffef1eaae8f6036.setContent(html_658b5a0b60212d487d160f0c676015d5);
+            
+        
+
+        marker_a68f5db2313ceb1ebfe592a16a5247db.bindPopup(popup_feee06235064f97e9ffef1eaae8f6036)
+        ;
+
+        
+    
+    
+            var marker_4344bbc6d43209f1cc335070466d8048 = L.marker(
+                [36.53131239, 127.42765908],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_9871b19d0970f7cb2fb42561fb579875 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a70fec4ff68ae4db02222eff9e33816c = $(`<div id="html_a70fec4ff68ae4db02222eff9e33816c" style="width: 100.0%; height: 100.0%;">부용외천리</div>`)[0];
+                popup_9871b19d0970f7cb2fb42561fb579875.setContent(html_a70fec4ff68ae4db02222eff9e33816c);
+            
+        
+
+        marker_4344bbc6d43209f1cc335070466d8048.bindPopup(popup_9871b19d0970f7cb2fb42561fb579875)
+        ;
+
+        
+    
+    
+            var marker_2658612ec23fd2283e7166d4987b9c37 = L.marker(
+                [36.53378451, 127.4265438],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_38f7c2e6b3e2ba3f23e7e1dd1a7d90f8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_935745a14055d44d86e40c22fbb685da = $(`<div id="html_935745a14055d44d86e40c22fbb685da" style="width: 100.0%; height: 100.0%;">부용외천2리</div>`)[0];
+                popup_38f7c2e6b3e2ba3f23e7e1dd1a7d90f8.setContent(html_935745a14055d44d86e40c22fbb685da);
+            
+        
+
+        marker_2658612ec23fd2283e7166d4987b9c37.bindPopup(popup_38f7c2e6b3e2ba3f23e7e1dd1a7d90f8)
+        ;
+
+        
+    
+    
+            var marker_bae324f9f5d1399fa1822378972df9ce = L.marker(
+                [36.54158914, 127.43024696],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_55c2b8c395709e22e37e99719d015e1b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_140e833f46a187bff22c07af7f7cbba8 = $(`<div id="html_140e833f46a187bff22c07af7f7cbba8" style="width: 100.0%; height: 100.0%;">부용외천1리.외천초교</div>`)[0];
+                popup_55c2b8c395709e22e37e99719d015e1b.setContent(html_140e833f46a187bff22c07af7f7cbba8);
+            
+        
+
+        marker_bae324f9f5d1399fa1822378972df9ce.bindPopup(popup_55c2b8c395709e22e37e99719d015e1b)
+        ;
+
+        
+    
+    
+            var marker_a703e6b7f38d723b8828c445fe843b04 = L.marker(
+                [36.54841455, 127.4307079],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_7da8578b2356dbdbfaea560826812795 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6dd4d2d1caacf376d5c91e90bd00d509 = $(`<div id="html_6dd4d2d1caacf376d5c91e90bd00d509" style="width: 100.0%; height: 100.0%;">외천2리</div>`)[0];
+                popup_7da8578b2356dbdbfaea560826812795.setContent(html_6dd4d2d1caacf376d5c91e90bd00d509);
+            
+        
+
+        marker_a703e6b7f38d723b8828c445fe843b04.bindPopup(popup_7da8578b2356dbdbfaea560826812795)
+        ;
+
+        
+    
+    
+            var marker_6cc67da1cd983f23c4ddd1f627d7e71c = L.marker(
+                [36.5561244, 127.43130486],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_ab9768c52b75dc74efecdbef2f8b982c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3cb0334220d401d26ccd418c39f9a4b = $(`<div id="html_a3cb0334220d401d26ccd418c39f9a4b" style="width: 100.0%; height: 100.0%;">남이외천삼거리(외천3리)</div>`)[0];
+                popup_ab9768c52b75dc74efecdbef2f8b982c.setContent(html_a3cb0334220d401d26ccd418c39f9a4b);
+            
+        
+
+        marker_6cc67da1cd983f23c4ddd1f627d7e71c.bindPopup(popup_ab9768c52b75dc74efecdbef2f8b982c)
+        ;
+
+        
+    
+    
+            var marker_c6bc58685d6f276e817e22b5b7af1b3b = L.marker(
+                [36.55990801, 127.43469908],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_7c13433bfa7122b4c7b95da53b4fd2b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d90f7faa339d757790ff2a38b5452a09 = $(`<div id="html_d90f7faa339d757790ff2a38b5452a09" style="width: 100.0%; height: 100.0%;">남이면행정복지센터</div>`)[0];
+                popup_7c13433bfa7122b4c7b95da53b4fd2b7.setContent(html_d90f7faa339d757790ff2a38b5452a09);
+            
+        
+
+        marker_c6bc58685d6f276e817e22b5b7af1b3b.bindPopup(popup_7c13433bfa7122b4c7b95da53b4fd2b7)
+        ;
+
+        
+    
+    
+            var marker_12c7837b0bc1ca4db7d924000dbd98f6 = L.marker(
+                [36.56267954, 127.44053211],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_5d9a8c4fe74f483a85ffcabf7513fb48 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55d266fa00563fe07027d1a2420b9577 = $(`<div id="html_55d266fa00563fe07027d1a2420b9577" style="width: 100.0%; height: 100.0%;">척산1리</div>`)[0];
+                popup_5d9a8c4fe74f483a85ffcabf7513fb48.setContent(html_55d266fa00563fe07027d1a2420b9577);
+            
+        
+
+        marker_12c7837b0bc1ca4db7d924000dbd98f6.bindPopup(popup_5d9a8c4fe74f483a85ffcabf7513fb48)
+        ;
+
+        
+    
+    
+            var marker_1de25eec5337e222b89de5d5716f6463 = L.marker(
+                [36.56219201, 127.44624564],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_1d60943842fc913db17b270f80d86275 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cfa163f19397fc14334f26316a71127e = $(`<div id="html_cfa163f19397fc14334f26316a71127e" style="width: 100.0%; height: 100.0%;">척산3리</div>`)[0];
+                popup_1d60943842fc913db17b270f80d86275.setContent(html_cfa163f19397fc14334f26316a71127e);
+            
+        
+
+        marker_1de25eec5337e222b89de5d5716f6463.bindPopup(popup_1d60943842fc913db17b270f80d86275)
+        ;
+
+        
+    
+    
+            var marker_0dca1819462fd468e816b3a55a1f0267 = L.marker(
+                [36.57063838, 127.45258799],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_162a2f330d0ac294fa54445983a52a46 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5c1fe2dcac0a5904682e7380e8e3299 = $(`<div id="html_e5c1fe2dcac0a5904682e7380e8e3299" style="width: 100.0%; height: 100.0%;">수대리</div>`)[0];
+                popup_162a2f330d0ac294fa54445983a52a46.setContent(html_e5c1fe2dcac0a5904682e7380e8e3299);
+            
+        
+
+        marker_0dca1819462fd468e816b3a55a1f0267.bindPopup(popup_162a2f330d0ac294fa54445983a52a46)
+        ;
+
+        
+    
+    
+            var marker_e5ecba623c82451605a2660d86e04767 = L.marker(
+                [36.57550475, 127.45452508],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_c0de6bf5e1a9aa6e4e7bb530aeb5058e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f4e68aae03a6bc45fa0ead5e5cd3323 = $(`<div id="html_0f4e68aae03a6bc45fa0ead5e5cd3323" style="width: 100.0%; height: 100.0%;">남이초등학교</div>`)[0];
+                popup_c0de6bf5e1a9aa6e4e7bb530aeb5058e.setContent(html_0f4e68aae03a6bc45fa0ead5e5cd3323);
+            
+        
+
+        marker_e5ecba623c82451605a2660d86e04767.bindPopup(popup_c0de6bf5e1a9aa6e4e7bb530aeb5058e)
+        ;
+
+        
+    
+    
+            var marker_2169a47eba080483aeef8754a1a7777d = L.marker(
+                [36.57943939, 127.46165533],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_1ee52255163a9d8c8caa678c3cf243b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e10bf8d9004b5ae109fb563f07fc4a97 = $(`<div id="html_e10bf8d9004b5ae109fb563f07fc4a97" style="width: 100.0%; height: 100.0%;">가좌리</div>`)[0];
+                popup_1ee52255163a9d8c8caa678c3cf243b6.setContent(html_e10bf8d9004b5ae109fb563f07fc4a97);
+            
+        
+
+        marker_2169a47eba080483aeef8754a1a7777d.bindPopup(popup_1ee52255163a9d8c8caa678c3cf243b6)
+        ;
+
+        
+    
+    
+            var marker_0f434bd2731918c4aed2d01dac4ad2d6 = L.marker(
+                [36.58341737, 127.46467707],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_cf9c7c6fe78f5b5267e15211d3c876db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc2a873ed17a7266f499c2bf03d15ec7 = $(`<div id="html_bc2a873ed17a7266f499c2bf03d15ec7" style="width: 100.0%; height: 100.0%;">양촌리</div>`)[0];
+                popup_cf9c7c6fe78f5b5267e15211d3c876db.setContent(html_bc2a873ed17a7266f499c2bf03d15ec7);
+            
+        
+
+        marker_0f434bd2731918c4aed2d01dac4ad2d6.bindPopup(popup_cf9c7c6fe78f5b5267e15211d3c876db)
+        ;
+
+        
+    
+    
+            var marker_6544eb41a4065292e79671f8dcd13381 = L.marker(
+                [36.58585407, 127.46624194],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_55e70e7cd8f0ba26fcb8dc23632c8cb0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f239580e05624fd82818a844624f5eb3 = $(`<div id="html_f239580e05624fd82818a844624f5eb3" style="width: 100.0%; height: 100.0%;">양촌1리</div>`)[0];
+                popup_55e70e7cd8f0ba26fcb8dc23632c8cb0.setContent(html_f239580e05624fd82818a844624f5eb3);
+            
+        
+
+        marker_6544eb41a4065292e79671f8dcd13381.bindPopup(popup_55e70e7cd8f0ba26fcb8dc23632c8cb0)
+        ;
+
+        
+    
+    
+            var marker_31ae907d257be2cf1ad209cbc8deff97 = L.marker(
+                [36.59228587, 127.47022064],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_4c12dff526bff6a0107d94c812b2d462 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4854ad7ce147ca2ee7bb9907b6a3663c = $(`<div id="html_4854ad7ce147ca2ee7bb9907b6a3663c" style="width: 100.0%; height: 100.0%;">양촌3리</div>`)[0];
+                popup_4c12dff526bff6a0107d94c812b2d462.setContent(html_4854ad7ce147ca2ee7bb9907b6a3663c);
+            
+        
+
+        marker_31ae907d257be2cf1ad209cbc8deff97.bindPopup(popup_4c12dff526bff6a0107d94c812b2d462)
+        ;
+
+        
+    
+    
+            var marker_aff97f99e3f78e55bf83b8116d854641 = L.marker(
+                [36.59768156, 127.47264187],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_e1b4e172b04ad03f30d3d67a2591bf49 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2616e0e27b73c885f67ff6ad296d7aa7 = $(`<div id="html_2616e0e27b73c885f67ff6ad296d7aa7" style="width: 100.0%; height: 100.0%;">미평</div>`)[0];
+                popup_e1b4e172b04ad03f30d3d67a2591bf49.setContent(html_2616e0e27b73c885f67ff6ad296d7aa7);
+            
+        
+
+        marker_aff97f99e3f78e55bf83b8116d854641.bindPopup(popup_e1b4e172b04ad03f30d3d67a2591bf49)
+        ;
+
+        
+    
+    
+            var marker_18c90570117e50abae49e696b2d066fb = L.marker(
+                [36.60027841, 127.47548603],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_9d825bbf1fc2e0b4c3abb57b06eb924c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8437071c38c462500c3050a1fa58f6d5 = $(`<div id="html_8437071c38c462500c3050a1fa58f6d5" style="width: 100.0%; height: 100.0%;">이마트</div>`)[0];
+                popup_9d825bbf1fc2e0b4c3abb57b06eb924c.setContent(html_8437071c38c462500c3050a1fa58f6d5);
+            
+        
+
+        marker_18c90570117e50abae49e696b2d066fb.bindPopup(popup_9d825bbf1fc2e0b4c3abb57b06eb924c)
+        ;
+
+        
+    
+    
+            var marker_4e8a8f3e7e17c2e5a98ccadf2a3c7702 = L.marker(
+                [36.60162746, 127.47748851],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_e68d3a71ff52f4a3228728b4ba0a29b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25267790d3cf20cb5655d4d5b6ea159f = $(`<div id="html_25267790d3cf20cb5655d4d5b6ea159f" style="width: 100.0%; height: 100.0%;">청주교도소</div>`)[0];
+                popup_e68d3a71ff52f4a3228728b4ba0a29b4.setContent(html_25267790d3cf20cb5655d4d5b6ea159f);
+            
+        
+
+        marker_4e8a8f3e7e17c2e5a98ccadf2a3c7702.bindPopup(popup_e68d3a71ff52f4a3228728b4ba0a29b4)
+        ;
+
+        
+    
+    
+            var marker_9e86b20e5f13107d39381c0258aef03b = L.marker(
+                [36.60568177, 127.48070363],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_c563f1f901aeff0f599990a705cb40fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d17e0425b3bf9806c85f24f1304e9bb7 = $(`<div id="html_d17e0425b3bf9806c85f24f1304e9bb7" style="width: 100.0%; height: 100.0%;">충청북도교육청</div>`)[0];
+                popup_c563f1f901aeff0f599990a705cb40fc.setContent(html_d17e0425b3bf9806c85f24f1304e9bb7);
+            
+        
+
+        marker_9e86b20e5f13107d39381c0258aef03b.bindPopup(popup_c563f1f901aeff0f599990a705cb40fc)
+        ;
+
+        
+    
+    
+            var marker_56a3d8a2a2e1cf47c149de1013b71a1f = L.marker(
+                [36.60840654, 127.48296138],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_3a741af81971cb5adef7c1a8b9ad3bdd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_07eb9a540b2f53c3a0e0abf610a80925 = $(`<div id="html_07eb9a540b2f53c3a0e0abf610a80925" style="width: 100.0%; height: 100.0%;">남성초등학교</div>`)[0];
+                popup_3a741af81971cb5adef7c1a8b9ad3bdd.setContent(html_07eb9a540b2f53c3a0e0abf610a80925);
+            
+        
+
+        marker_56a3d8a2a2e1cf47c149de1013b71a1f.bindPopup(popup_3a741af81971cb5adef7c1a8b9ad3bdd)
+        ;
+
+        
+    
+    
+            var marker_3f637fc3c34dcf09b285b86fdd687c9c = L.marker(
+                [36.61031519, 127.48436776],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_9ea511031ce2a234730873ef90cd95b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96f13d722b2e6d35b22f6d039ca7c52b = $(`<div id="html_96f13d722b2e6d35b22f6d039ca7c52b" style="width: 100.0%; height: 100.0%;">남성중학교</div>`)[0];
+                popup_9ea511031ce2a234730873ef90cd95b5.setContent(html_96f13d722b2e6d35b22f6d039ca7c52b);
+            
+        
+
+        marker_3f637fc3c34dcf09b285b86fdd687c9c.bindPopup(popup_9ea511031ce2a234730873ef90cd95b5)
+        ;
+
+        
+    
+    
+            var marker_5c12a3bcdce6a20877a49025d10add21 = L.marker(
+                [36.61337726, 127.48567815],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_cad35ddc56a217325c6b3cf5d476c78e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1913c8937aedd856e9b158d7633e96d3 = $(`<div id="html_1913c8937aedd856e9b158d7633e96d3" style="width: 100.0%; height: 100.0%;">수곡우체국</div>`)[0];
+                popup_cad35ddc56a217325c6b3cf5d476c78e.setContent(html_1913c8937aedd856e9b158d7633e96d3);
+            
+        
+
+        marker_5c12a3bcdce6a20877a49025d10add21.bindPopup(popup_cad35ddc56a217325c6b3cf5d476c78e)
+        ;
+
+        
+    
+    
+            var marker_30a77c2cdee032c3d148e9a355280c7c = L.marker(
+                [36.6174112, 127.48680444],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_b88f733288f3e077502dc29e05a6e07e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62ba850ae53cb3019b332c462ae24e50 = $(`<div id="html_62ba850ae53cb3019b332c462ae24e50" style="width: 100.0%; height: 100.0%;">청주교육대학교</div>`)[0];
+                popup_b88f733288f3e077502dc29e05a6e07e.setContent(html_62ba850ae53cb3019b332c462ae24e50);
+            
+        
+
+        marker_30a77c2cdee032c3d148e9a355280c7c.bindPopup(popup_b88f733288f3e077502dc29e05a6e07e)
+        ;
+
+        
+    
+    
+            var marker_f12658e2259b587edfab3bb2d6b955eb = L.marker(
+                [36.62098885, 127.48780639],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_376985255501e746d3ae3d8acb75cceb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3eef982f73215ddc4f7f9989c57bcd8f = $(`<div id="html_3eef982f73215ddc4f7f9989c57bcd8f" style="width: 100.0%; height: 100.0%;">청주농협</div>`)[0];
+                popup_376985255501e746d3ae3d8acb75cceb.setContent(html_3eef982f73215ddc4f7f9989c57bcd8f);
+            
+        
+
+        marker_f12658e2259b587edfab3bb2d6b955eb.bindPopup(popup_376985255501e746d3ae3d8acb75cceb)
+        ;
+
+        
+    
+    
+            var marker_d897a5e9f9716ba828825068bfa23cc5 = L.marker(
+                [36.62395878, 127.48864509],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_2dbec8f7a7583577d8ec8a954328c0c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_659b4acc22e35ede3a0ae5fb597093b4 = $(`<div id="html_659b4acc22e35ede3a0ae5fb597093b4" style="width: 100.0%; height: 100.0%;">꽃다리.아동복지관</div>`)[0];
+                popup_2dbec8f7a7583577d8ec8a954328c0c0.setContent(html_659b4acc22e35ede3a0ae5fb597093b4);
+            
+        
+
+        marker_d897a5e9f9716ba828825068bfa23cc5.bindPopup(popup_2dbec8f7a7583577d8ec8a954328c0c0)
+        ;
+
+        
+    
+    
+            var marker_7305fe7fc19c44e85fc5a4e3bdce4e9c = L.marker(
+                [36.62769498, 127.49101551],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_e1b7680f94980ba67b3c0aae30abcfea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_113ff295aae7c44e4bf330b75c8dc1ad = $(`<div id="html_113ff295aae7c44e4bf330b75c8dc1ad" style="width: 100.0%; height: 100.0%;">육거리시장</div>`)[0];
+                popup_e1b7680f94980ba67b3c0aae30abcfea.setContent(html_113ff295aae7c44e4bf330b75c8dc1ad);
+            
+        
+
+        marker_7305fe7fc19c44e85fc5a4e3bdce4e9c.bindPopup(popup_e1b7680f94980ba67b3c0aae30abcfea)
+        ;
+
+        
+    
+    
+            var marker_3f1a5fed0224331f7251b975da7448c9 = L.marker(
+                [36.63156961, 127.49107996],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_4969e49a25b89bc2883580a8a43aaa7e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cd4cca1fcc4d672a86a6d452ee41e5ea = $(`<div id="html_cd4cca1fcc4d672a86a6d452ee41e5ea" style="width: 100.0%; height: 100.0%;">서운동</div>`)[0];
+                popup_4969e49a25b89bc2883580a8a43aaa7e.setContent(html_cd4cca1fcc4d672a86a6d452ee41e5ea);
+            
+        
+
+        marker_3f1a5fed0224331f7251b975da7448c9.bindPopup(popup_4969e49a25b89bc2883580a8a43aaa7e)
+        ;
+
+        
+    
+    
+            var marker_58d69a5ef07e23e3831061292b8d1de7 = L.marker(
+                [36.63417647, 127.4907589],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_2892aab50961378509bf300260ff8284 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61afa0fad70f28480b033c5d051ced0c = $(`<div id="html_61afa0fad70f28480b033c5d051ced0c" style="width: 100.0%; height: 100.0%;">도청</div>`)[0];
+                popup_2892aab50961378509bf300260ff8284.setContent(html_61afa0fad70f28480b033c5d051ced0c);
+            
+        
+
+        marker_58d69a5ef07e23e3831061292b8d1de7.bindPopup(popup_2892aab50961378509bf300260ff8284)
+        ;
+
+        
+    
+    
+            var marker_e51d485ca7b9b47fdfd8c6c033dda170 = L.marker(
+                [36.63867605, 127.49022876],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_6722f34d9c4506d87d4c40a21791b6ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9bb98fabbba28bb0937f1dedc2beba25 = $(`<div id="html_9bb98fabbba28bb0937f1dedc2beba25" style="width: 100.0%; height: 100.0%;">상당공원</div>`)[0];
+                popup_6722f34d9c4506d87d4c40a21791b6ff.setContent(html_9bb98fabbba28bb0937f1dedc2beba25);
+            
+        
+
+        marker_e51d485ca7b9b47fdfd8c6c033dda170.bindPopup(popup_6722f34d9c4506d87d4c40a21791b6ff)
+        ;
+
+        
+    
+    
+            var marker_3270c7f04918c0a53e6e558c207a8823 = L.marker(
+                [36.64163614, 127.48993896],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_de21622426b69597ff666e3a1b7a68bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_120c8df1eb3adfd43085989b42c85b28 = $(`<div id="html_120c8df1eb3adfd43085989b42c85b28" style="width: 100.0%; height: 100.0%;">시청 신청사예정지</div>`)[0];
+                popup_de21622426b69597ff666e3a1b7a68bc.setContent(html_120c8df1eb3adfd43085989b42c85b28);
+            
+        
+
+        marker_3270c7f04918c0a53e6e558c207a8823.bindPopup(popup_de21622426b69597ff666e3a1b7a68bc)
+        ;
+
+        
+    
+    
+            var marker_66c2efc1424d7f7831bfdb258eb9b304 = L.marker(
+                [36.64455226, 127.4896634],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_bbd1f14132b4a4870cc90f06caffdc5e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a9fa0a122de4147ed1c21ff960b37c4c = $(`<div id="html_a9fa0a122de4147ed1c21ff960b37c4c" style="width: 100.0%; height: 100.0%;">방아다리.수암골</div>`)[0];
+                popup_bbd1f14132b4a4870cc90f06caffdc5e.setContent(html_a9fa0a122de4147ed1c21ff960b37c4c);
+            
+        
+
+        marker_66c2efc1424d7f7831bfdb258eb9b304.bindPopup(popup_bbd1f14132b4a4870cc90f06caffdc5e)
+        ;
+
+        
+    
+    
+            var marker_506dbf14055146a3abe1c4825f59f3fd = L.marker(
+                [36.64737816, 127.48941706],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_a2275e2e3771a5804b4a41f284ef0213 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4bcefc991b6259bfa0d31d389db8dd5 = $(`<div id="html_a4bcefc991b6259bfa0d31d389db8dd5" style="width: 100.0%; height: 100.0%;">우암초등학교</div>`)[0];
+                popup_a2275e2e3771a5804b4a41f284ef0213.setContent(html_a4bcefc991b6259bfa0d31d389db8dd5);
+            
+        
+
+        marker_506dbf14055146a3abe1c4825f59f3fd.bindPopup(popup_a2275e2e3771a5804b4a41f284ef0213)
+        ;
+
+        
+    
+    
+            var marker_1c9173d020656bc5d13b8e956e43be52 = L.marker(
+                [36.65074073, 127.48905996],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_827a1823bb2da8e7e1e72ae33605b551 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_777f4506076278f3404a27f9818be139 = $(`<div id="html_777f4506076278f3404a27f9818be139" style="width: 100.0%; height: 100.0%;">청주대학교.뉴시스</div>`)[0];
+                popup_827a1823bb2da8e7e1e72ae33605b551.setContent(html_777f4506076278f3404a27f9818be139);
+            
+        
+
+        marker_1c9173d020656bc5d13b8e956e43be52.bindPopup(popup_827a1823bb2da8e7e1e72ae33605b551)
+        ;
+
+        
+    
+    
+            var marker_648dd2e6552088aad5b754cb6b389a88 = L.marker(
+                [36.65556866, 127.48860978],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_877bbfc023dc4d46ed758e4a1ccdeaba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52a6c611d020fc70d46f7b4db3cb5501 = $(`<div id="html_52a6c611d020fc70d46f7b4db3cb5501" style="width: 100.0%; height: 100.0%;">문화제조창.시청제2임시청사</div>`)[0];
+                popup_877bbfc023dc4d46ed758e4a1ccdeaba.setContent(html_52a6c611d020fc70d46f7b4db3cb5501);
+            
+        
+
+        marker_648dd2e6552088aad5b754cb6b389a88.bindPopup(popup_877bbfc023dc4d46ed758e4a1ccdeaba)
+        ;
+
+        
+    
+    
+            var marker_379dc5b2227a5dcaedf814094e417b9f = L.marker(
+                [36.65958484, 127.4877315],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_34f3d09ea5af76b4ddf642cdbb2a0ff1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a3afda550e4d683ca02476b70907841 = $(`<div id="html_3a3afda550e4d683ca02476b70907841" style="width: 100.0%; height: 100.0%;">밤고개</div>`)[0];
+                popup_34f3d09ea5af76b4ddf642cdbb2a0ff1.setContent(html_3a3afda550e4d683ca02476b70907841);
+            
+        
+
+        marker_379dc5b2227a5dcaedf814094e417b9f.bindPopup(popup_34f3d09ea5af76b4ddf642cdbb2a0ff1)
+        ;
+
+        
+    
+    
+            var marker_9861b33a0453f5aa4f4e38806a225f2f = L.marker(
+                [36.66250637, 127.4871478],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_9510176e1995814f425ec6dcec3ef66d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6aca9609de482a9ca14513c13ddefb91 = $(`<div id="html_6aca9609de482a9ca14513c13ddefb91" style="width: 100.0%; height: 100.0%;">신화아파트.밤고개자연시장</div>`)[0];
+                popup_9510176e1995814f425ec6dcec3ef66d.setContent(html_6aca9609de482a9ca14513c13ddefb91);
+            
+        
+
+        marker_9861b33a0453f5aa4f4e38806a225f2f.bindPopup(popup_9510176e1995814f425ec6dcec3ef66d)
+        ;
+
+        
+    
+    
+            var marker_d3b24a5bd688e4785f8844dfe5be3600 = L.marker(
+                [36.66597042, 127.48667019],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_4da40dd584f3a1c26c5988a066438832 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a1c74f40da84b52f65258fe0a0ab2a28 = $(`<div id="html_a1c74f40da84b52f65258fe0a0ab2a28" style="width: 100.0%; height: 100.0%;">청주여자고등학교.충청매일</div>`)[0];
+                popup_4da40dd584f3a1c26c5988a066438832.setContent(html_a1c74f40da84b52f65258fe0a0ab2a28);
+            
+        
+
+        marker_d3b24a5bd688e4785f8844dfe5be3600.bindPopup(popup_4da40dd584f3a1c26c5988a066438832)
+        ;
+
+        
+    
+    
+            var marker_72c68b0f983d58cf45ff4dce0304fe9c = L.marker(
+                [36.66767203, 127.48572906],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_62eecf13df6435ef00cc5bb90c5ca113 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49f9d70d1eec69c88a4a0e80276cfbfe = $(`<div id="html_49f9d70d1eec69c88a4a0e80276cfbfe" style="width: 100.0%; height: 100.0%;">덕성초등학교</div>`)[0];
+                popup_62eecf13df6435ef00cc5bb90c5ca113.setContent(html_49f9d70d1eec69c88a4a0e80276cfbfe);
+            
+        
+
+        marker_72c68b0f983d58cf45ff4dce0304fe9c.bindPopup(popup_62eecf13df6435ef00cc5bb90c5ca113)
+        ;
+
+        
+    
+    
+            var marker_eb6eb984596c9f59b9dd0bd87071d6c9 = L.marker(
+                [36.6710134, 127.48363855],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_21ab0649db5d84632edd553b3d93e04a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff8c4433b49cb0b539cc94e6195af4ef = $(`<div id="html_ff8c4433b49cb0b539cc94e6195af4ef" style="width: 100.0%; height: 100.0%;">청주성모병원</div>`)[0];
+                popup_21ab0649db5d84632edd553b3d93e04a.setContent(html_ff8c4433b49cb0b539cc94e6195af4ef);
+            
+        
+
+        marker_eb6eb984596c9f59b9dd0bd87071d6c9.bindPopup(popup_21ab0649db5d84632edd553b3d93e04a)
+        ;
+
+        
+    
+    
+            var marker_d1d5e4ae501c2588eccc184aeea955b0 = L.marker(
+                [36.67554708, 127.48352277],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_c3719ba3c3fa6114f4fc9bf4201b6fc9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_424ead6cfe72e53b07d045109144c593 = $(`<div id="html_424ead6cfe72e53b07d045109144c593" style="width: 100.0%; height: 100.0%;">율량중학교입구</div>`)[0];
+                popup_c3719ba3c3fa6114f4fc9bf4201b6fc9.setContent(html_424ead6cfe72e53b07d045109144c593);
+            
+        
+
+        marker_d1d5e4ae501c2588eccc184aeea955b0.bindPopup(popup_c3719ba3c3fa6114f4fc9bf4201b6fc9)
+        ;
+
+        
+    
+    
+            var marker_c680a3018ae3b9cb2fd605e3177ebee3 = L.marker(
+                [36.68017241, 127.48315914],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_84dcb2d440b9812bccb295f191e60834 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97f1be72675f785baa2e19817cbfeb92 = $(`<div id="html_97f1be72675f785baa2e19817cbfeb92" style="width: 100.0%; height: 100.0%;">발산교.장애인스포츠센터.청주빙상장</div>`)[0];
+                popup_84dcb2d440b9812bccb295f191e60834.setContent(html_97f1be72675f785baa2e19817cbfeb92);
+            
+        
+
+        marker_c680a3018ae3b9cb2fd605e3177ebee3.bindPopup(popup_84dcb2d440b9812bccb295f191e60834)
+        ;
+
+        
+    
+    
+            var marker_274937cfd6ec42c9c1a627c954687641 = L.marker(
+                [36.6822885, 127.48268792],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_86bffd30db88ba134ab706567600463d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51961d6a4c30ac5b37d19ec78f1e9f94 = $(`<div id="html_51961d6a4c30ac5b37d19ec78f1e9f94" style="width: 100.0%; height: 100.0%;">충청북도교육문화원</div>`)[0];
+                popup_86bffd30db88ba134ab706567600463d.setContent(html_51961d6a4c30ac5b37d19ec78f1e9f94);
+            
+        
+
+        marker_274937cfd6ec42c9c1a627c954687641.bindPopup(popup_86bffd30db88ba134ab706567600463d)
+        ;
+
+        
+    
+    
+            var marker_fe5ae78804081a0f433734a361bb0ef3 = L.marker(
+                [36.6873063, 127.48333818],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_a165a13fd1c9775b6bb528d0494084b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d62e664464a010103f3eb0213a8acb6c = $(`<div id="html_d62e664464a010103f3eb0213a8acb6c" style="width: 100.0%; height: 100.0%;">북일초등학교</div>`)[0];
+                popup_a165a13fd1c9775b6bb528d0494084b3.setContent(html_d62e664464a010103f3eb0213a8acb6c);
+            
+        
+
+        marker_fe5ae78804081a0f433734a361bb0ef3.bindPopup(popup_a165a13fd1c9775b6bb528d0494084b3)
+        ;
+
+        
+    
+    
+            var marker_4a42be091b7a12d2e9bf2542c3baaae6 = L.marker(
+                [36.69436644, 127.48163171],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_5a3643a0ac5b21149372001799d2d5db = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d69bd9d18ec7749b4da2e2379245c8dc = $(`<div id="html_d69bd9d18ec7749b4da2e2379245c8dc" style="width: 100.0%; height: 100.0%;">오근장동행정복지센터</div>`)[0];
+                popup_5a3643a0ac5b21149372001799d2d5db.setContent(html_d69bd9d18ec7749b4da2e2379245c8dc);
+            
+        
+
+        marker_4a42be091b7a12d2e9bf2542c3baaae6.bindPopup(popup_5a3643a0ac5b21149372001799d2d5db)
+        ;
+
+        
+    
+    
+            var marker_ff59cf05a4026baa1af4624dd7046ded = L.marker(
+                [36.69672489, 127.480778],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_827220bc1fd26f29963cfc4c42984aad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3212cbdaa173a1056282ee3cec943a7c = $(`<div id="html_3212cbdaa173a1056282ee3cec943a7c" style="width: 100.0%; height: 100.0%;">외평동</div>`)[0];
+                popup_827220bc1fd26f29963cfc4c42984aad.setContent(html_3212cbdaa173a1056282ee3cec943a7c);
+            
+        
+
+        marker_ff59cf05a4026baa1af4624dd7046ded.bindPopup(popup_827220bc1fd26f29963cfc4c42984aad)
+        ;
+
+        
+    
+    
+            var marker_18bed4705ef484764a52f9aba12e131c = L.marker(
+                [36.69898263, 127.48045553],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_66c4db069990e07c5c95e48d8e31b445 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5f950b1c6f2d02c75062ebdffb058838 = $(`<div id="html_5f950b1c6f2d02c75062ebdffb058838" style="width: 100.0%; height: 100.0%;">오근장역</div>`)[0];
+                popup_66c4db069990e07c5c95e48d8e31b445.setContent(html_5f950b1c6f2d02c75062ebdffb058838);
+            
+        
+
+        marker_18bed4705ef484764a52f9aba12e131c.bindPopup(popup_66c4db069990e07c5c95e48d8e31b445)
+        ;
+
+        
+    
+    
+            var marker_bb8eb0713bc12f5b02c8c38078f2bfa4 = L.marker(
+                [36.70715723, 127.47927999],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_74f5710978779565284d8e5c5dd56212 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75f0d8c188f85f35221704fef73c2bdb = $(`<div id="html_75f0d8c188f85f35221704fef73c2bdb" style="width: 100.0%; height: 100.0%;">국제공항입구</div>`)[0];
+                popup_74f5710978779565284d8e5c5dd56212.setContent(html_75f0d8c188f85f35221704fef73c2bdb);
+            
+        
+
+        marker_bb8eb0713bc12f5b02c8c38078f2bfa4.bindPopup(popup_74f5710978779565284d8e5c5dd56212)
+        ;
+
+        
+    
+    
+            var marker_ffa68df44c0881e85d75abed79adc014 = L.marker(
+                [36.72021665, 127.4912827],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_21cdcc90cadaa45eda1235c1ff26922f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84b36a127d1c4605de1f29047d6c52ad = $(`<div id="html_84b36a127d1c4605de1f29047d6c52ad" style="width: 100.0%; height: 100.0%;">청주공항역</div>`)[0];
+                popup_21cdcc90cadaa45eda1235c1ff26922f.setContent(html_84b36a127d1c4605de1f29047d6c52ad);
+            
+        
+
+        marker_ffa68df44c0881e85d75abed79adc014.bindPopup(popup_21cdcc90cadaa45eda1235c1ff26922f)
+        ;
+
+        
+    
+    
+            var marker_13d96111ea838234b566d1335bdb0ed3 = L.marker(
+                [36.72224092, 127.49532535],
+                {
+}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+    
+        var popup_e9cca5d59c7b828d1ed8b1220172e3f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20628865953c8cd0b3288f438553778f = $(`<div id="html_20628865953c8cd0b3288f438553778f" style="width: 100.0%; height: 100.0%;">청주국제공항</div>`)[0];
+                popup_e9cca5d59c7b828d1ed8b1220172e3f4.setContent(html_20628865953c8cd0b3288f438553778f);
+            
+        
+
+        marker_13d96111ea838234b566d1335bdb0ed3.bindPopup(popup_e9cca5d59c7b828d1ed8b1220172e3f4)
+        ;
+
+        
+    
+    
+            var poly_line_3210465749845cc555b1e37edc06b2a8 = L.polyline(
+                [[36.72306035, 127.49654795], [36.72119948, 127.49130629], [36.70723964, 127.47915523], [36.69911583, 127.48032911], [36.69653865, 127.48069834], [36.69375284, 127.48178079], [36.6876174, 127.48311801], [36.68296323, 127.48220708], [36.68012349, 127.48285739], [36.67595438, 127.48324188], [36.67047046, 127.48366359], [36.66666991, 127.48595743], [36.66308273, 127.48684897], [36.65950982, 127.48753988], [36.6551558, 127.48844776], [36.65085033, 127.48885739], [36.64809781, 127.48913878], [36.64174424, 127.48972584], [36.63827951, 127.49007548], [36.63288973, 127.49071036], [36.627554, 127.49067337], [36.62406039, 127.48830626], [36.62100559, 127.4874442], [36.61711247, 127.48636102], [36.61387066, 127.48543924], [36.61103228, 127.48449943], [36.60895978, 127.48292518], [36.60529464, 127.47992943], [36.601988, 127.47742982], [36.59982762, 127.47424013], [36.59816342, 127.47248651], [36.59507621, 127.47119291], [36.59164496, 127.46963909], [36.58601164, 127.46610429], [36.5833363, 127.46439241], [36.57912915, 127.46090206], [36.57572852, 127.45446704], [36.57039732, 127.45228088], [36.56245818, 127.44523407], [36.56281528, 127.44010818], [36.55993863, 127.43445238], [36.5561969, 127.43111295], [36.54863803, 127.43052796], [36.54190142, 127.42999571], [36.5348604, 127.42671675], [36.53216942, 127.42652071], [36.52241856, 127.43173038], [36.51763314, 127.42915607], [36.51509218, 127.4286665], [36.50789833, 127.42786121], [36.50143717, 127.42793693], [36.49915454, 127.42685511], [36.49465552, 127.42573186], [36.48679322, 127.42360552], [36.48391777, 127.42436809], [36.4736746, 127.42595988], [36.47062165, 127.42425351], [36.45926059, 127.4266903], [36.45281106, 127.42854342], [36.44966958, 127.42893063], [36.44449764, 127.42925787], [36.44242017, 127.42961482], [36.44292991, 127.42945032], [36.44504925, 127.42970342], [36.449377, 127.429334], [36.45212282, 127.42889344], [36.45933538, 127.42688373], [36.47088331, 127.4246636], [36.47441086, 127.42629083], [36.48500561, 127.42416847], [36.49455133, 127.4259018], [36.49899706, 127.42702113], [36.5012569, 127.42806163], [36.50895837, 127.42814889], [36.51386816, 127.42872882], [36.517307, 127.42926165], [36.52355061, 127.43217491], [36.53131239, 127.42765908], [36.53378451, 127.4265438], [36.54158914, 127.43024696], [36.54841455, 127.4307079], [36.5561244, 127.43130486], [36.55990801, 127.43469908], [36.56267954, 127.44053211], [36.56219201, 127.44624564], [36.57063838, 127.45258799], [36.57550475, 127.45452508], [36.57943939, 127.46165533], [36.58341737, 127.46467707], [36.58585407, 127.46624194], [36.59228587, 127.47022064], [36.59768156, 127.47264187], [36.60027841, 127.47548603], [36.60162746, 127.47748851], [36.60568177, 127.48070363], [36.60840654, 127.48296138], [36.61031519, 127.48436776], [36.61337726, 127.48567815], [36.6174112, 127.48680444], [36.62098885, 127.48780639], [36.62395878, 127.48864509], [36.62769498, 127.49101551], [36.63156961, 127.49107996], [36.63417647, 127.4907589], [36.63867605, 127.49022876], [36.64163614, 127.48993896], [36.64455226, 127.4896634], [36.64737816, 127.48941706], [36.65074073, 127.48905996], [36.65556866, 127.48860978], [36.65958484, 127.4877315], [36.66250637, 127.4871478], [36.66597042, 127.48667019], [36.66767203, 127.48572906], [36.6710134, 127.48363855], [36.67554708, 127.48352277], [36.68017241, 127.48315914], [36.6822885, 127.48268792], [36.6873063, 127.48333818], [36.69436644, 127.48163171], [36.69672489, 127.480778], [36.69898263, 127.48045553], [36.70715723, 127.47927999], [36.72021665, 127.4912827], [36.72224092, 127.49532535]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e8bcfde6db014c5ce476cdb79e23081b);
+        
+</script>
+</html>

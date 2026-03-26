@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e68c19121f2faa217c5e06d8633a5023 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e68c19121f2faa217c5e06d8633a5023" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e68c19121f2faa217c5e06d8633a5023 = L.map(
+                "map_e68c19121f2faa217c5e06d8633a5023",
+                {
+                    center: [36.58322655, 127.44386086],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9390e9170aaf7bf4007424a7c3de2314 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9390e9170aaf7bf4007424a7c3de2314.addTo(map_e68c19121f2faa217c5e06d8633a5023);
+        
+    
+            var marker_908314bcbc0a21f968bb238a6229b010 = L.marker(
+                [36.58322655, 127.44386086],
+                {
+}
+            ).addTo(map_e68c19121f2faa217c5e06d8633a5023);
+        
+    
+        var popup_94daf7e73d67fd35d9c80c7621266d36 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4393d5e9b108d32eca10d0c3e4a3ec06 = $(`<div id="html_4393d5e9b108d32eca10d0c3e4a3ec06" style="width: 100.0%; height: 100.0%;">석판종점</div>`)[0];
+                popup_94daf7e73d67fd35d9c80c7621266d36.setContent(html_4393d5e9b108d32eca10d0c3e4a3ec06);
+            
+        
+
+        marker_908314bcbc0a21f968bb238a6229b010.bindPopup(popup_94daf7e73d67fd35d9c80c7621266d36)
+        ;
+
+        
+    
+    
+            var marker_0e5368dc8a54ee889db2a82fb4c27216 = L.marker(
+                [36.58516119, 127.44208637],
+                {
+}
+            ).addTo(map_e68c19121f2faa217c5e06d8633a5023);
+        
+    
+        var popup_2f8c409d0d3060e7efb7d7c8ba1ac9f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e26c36b1d1fe67edb6f5caa8c592d512 = $(`<div id="html_e26c36b1d1fe67edb6f5caa8c592d512" style="width: 100.0%; height: 100.0%;">대련리</div>`)[0];
+                popup_2f8c409d0d3060e7efb7d7c8ba1ac9f1.setContent(html_e26c36b1d1fe67edb6f5caa8c592d512);
+            
+        
+
+        marker_0e5368dc8a54ee889db2a82fb4c27216.bindPopup(popup_2f8c409d0d3060e7efb7d7c8ba1ac9f1)
+        ;
+
+        
+    
+    
+            var marker_6b9cf80858212b7f669cc99a1d154516 = L.marker(
+                [36.59392919, 127.44160049],
+                {
+}
+            ).addTo(map_e68c19121f2faa217c5e06d8633a5023);
+        
+    
+        var popup_47e3934411f75c70fe77732d37b1f532 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b26b46da42642c11d1b712f59396379b = $(`<div id="html_b26b46da42642c11d1b712f59396379b" style="width: 100.0%; height: 100.0%;">석판1리</div>`)[0];
+                popup_47e3934411f75c70fe77732d37b1f532.setContent(html_b26b46da42642c11d1b712f59396379b);
+            
+        
+
+        marker_6b9cf80858212b7f669cc99a1d154516.bindPopup(popup_47e3934411f75c70fe77732d37b1f532)
+        ;
+
+        
+    
+    
+            var marker_445b51afeab3aa75c2ff38c12da0998d = L.marker(
+                [36.59766715, 127.44146533],
+                {
+}
+            ).addTo(map_e68c19121f2faa217c5e06d8633a5023);
+        
+    
+        var popup_583a58113cef42ea2f842cf537a631f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67b48f339885f5e5a56a2905b0129fd4 = $(`<div id="html_67b48f339885f5e5a56a2905b0129fd4" style="width: 100.0%; height: 100.0%;">돌간꽃마을</div>`)[0];
+                popup_583a58113cef42ea2f842cf537a631f4.setContent(html_67b48f339885f5e5a56a2905b0129fd4);
+            
+        
+
+        marker_445b51afeab3aa75c2ff38c12da0998d.bindPopup(popup_583a58113cef42ea2f842cf537a631f4)
+        ;
+
+        
+    
+    
+            var marker_0a232effc6f22bd3235120cc5e4c4e38 = L.marker(
+                [36.6019422, 127.44047544],
+                {
+}
+            ).addTo(map_e68c19121f2faa217c5e06d8633a5023);
+        
+    
+        var popup_5369ab02d6be0a9ffd904b3e1585c5a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_260e7bb6d2307447ad5d3823a3d4c795 = $(`<div id="html_260e7bb6d2307447ad5d3823a3d4c795" style="width: 100.0%; height: 100.0%;">석판2리</div>`)[0];
+                popup_5369ab02d6be0a9ffd904b3e1585c5a4.setContent(html_260e7bb6d2307447ad5d3823a3d4c795);
+            
+        
+
+        marker_0a232effc6f22bd3235120cc5e4c4e38.bindPopup(popup_5369ab02d6be0a9ffd904b3e1585c5a4)
+        ;
+
+        
+    
+    
+            var marker_8f1568826830f154a91573d00880e361 = L.marker(
+                [36.60428712, 127.44066989],
+                {
+}
+            ).addTo(map_e68c19121f2faa217c5e06d8633a5023);
+        
+    
+        var popup_eecd21e7df3deb0cb1ea54bc491256f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_222d0507d54f3cb19c60bf2d30f67574 = $(`<div id="html_222d0507d54f3cb19c60bf2d30f67574" style="width: 100.0%; height: 100.0%;">석판교차로</div>`)[0];
+                popup_eecd21e7df3deb0cb1ea54bc491256f5.setContent(html_222d0507d54f3cb19c60bf2d30f67574);
+            
+        
+
+        marker_8f1568826830f154a91573d00880e361.bindPopup(popup_eecd21e7df3deb0cb1ea54bc491256f5)
+        ;
+
+        
+    
+    
+            var marker_8741df4abe8c018df54bb0f6b5d7a079 = L.marker(
+                [36.60708276, 127.44108626],
+                {
+}
+            ).addTo(map_e68c19121f2faa217c5e06d8633a5023);
+        
+    
+        var popup_264e1f068bcb260cf332f90b2b6fd501 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3386d76a46e68411d4b7e34bff1b6bca = $(`<div id="html_3386d76a46e68411d4b7e34bff1b6bca" style="width: 100.0%; height: 100.0%;">대산마을</div>`)[0];
+                popup_264e1f068bcb260cf332f90b2b6fd501.setContent(html_3386d76a46e68411d4b7e34bff1b6bca);
+            
+        
+
+        marker_8741df4abe8c018df54bb0f6b5d7a079.bindPopup(popup_264e1f068bcb260cf332f90b2b6fd501)
+        ;
+
+        
+    
+    
+            var marker_56bb3b850191a5f996039076d002667e = L.marker(
+                [36.61061173, 127.44240526],
+                {
+}
+            ).addTo(map_e68c19121f2faa217c5e06d8633a5023);
+        
+    
+        var popup_53fde6a00b2f53dc1171799c6e3a866e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ecff32bcbf6b522fd807555a99015dde = $(`<div id="html_ecff32bcbf6b522fd807555a99015dde" style="width: 100.0%; height: 100.0%;">가경주공4단지아파트</div>`)[0];
+                popup_53fde6a00b2f53dc1171799c6e3a866e.setContent(html_ecff32bcbf6b522fd807555a99015dde);
+            
+        
+
+        marker_56bb3b850191a5f996039076d002667e.bindPopup(popup_53fde6a00b2f53dc1171799c6e3a866e)
+        ;
+
+        
+    
+    
+            var marker_5a544a5227b5317b7b3a3b20834149a2 = L.marker(
+                [36.61591658, 127.43804972],
+                {
+}
+            ).addTo(map_e68c19121f2faa217c5e06d8633a5023);
+        
+    
+        var popup_b1c42f0464164eae2abcce5408775ee2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8aaa7ce2baee237f9d8d6bdda85da861 = $(`<div id="html_8aaa7ce2baee237f9d8d6bdda85da861" style="width: 100.0%; height: 100.0%;">가경주공6단지아파트</div>`)[0];
+                popup_b1c42f0464164eae2abcce5408775ee2.setContent(html_8aaa7ce2baee237f9d8d6bdda85da861);
+            
+        
+
+        marker_5a544a5227b5317b7b3a3b20834149a2.bindPopup(popup_b1c42f0464164eae2abcce5408775ee2)
+        ;
+
+        
+    
+    
+            var marker_291ed0b7e7d56efb0d587658e3518425 = L.marker(
+                [36.61907748, 127.43546071],
+                {
+}
+            ).addTo(map_e68c19121f2faa217c5e06d8633a5023);
+        
+    
+        var popup_1dcd3b34e5fcd04e13910bf60faac72d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73bbc06d2ebcee9ce317cbbffcaaf537 = $(`<div id="html_73bbc06d2ebcee9ce317cbbffcaaf537" style="width: 100.0%; height: 100.0%;">MBC.경덕중학교</div>`)[0];
+                popup_1dcd3b34e5fcd04e13910bf60faac72d.setContent(html_73bbc06d2ebcee9ce317cbbffcaaf537);
+            
+        
+
+        marker_291ed0b7e7d56efb0d587658e3518425.bindPopup(popup_1dcd3b34e5fcd04e13910bf60faac72d)
+        ;
+
+        
+    
+    
+            var poly_line_845b026d60fd9a039929d07869d8b597 = L.polyline(
+                [[36.58322655, 127.44386086], [36.58516119, 127.44208637], [36.59392919, 127.44160049], [36.59766715, 127.44146533], [36.6019422, 127.44047544], [36.60428712, 127.44066989], [36.60708276, 127.44108626], [36.61061173, 127.44240526], [36.61591658, 127.43804972], [36.61907748, 127.43546071]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_e68c19121f2faa217c5e06d8633a5023);
+        
+</script>
+</html>
